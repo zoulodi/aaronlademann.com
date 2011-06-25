@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portfolio", "Portfolio", "{7A1FBA15-1546-4D63-A801-1E55EDBBC7A0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "html", "..\portfolio.aaronlademann.com\html\", "{FC018022-3EA1-4664-B189-F8F43136CD74}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/html"
+		Debug.AspNetCompiler.PhysicalPath = "..\portfolio.aaronlademann.com\html\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\html\"
+		Debug.AspNetCompiler.Updateable = "false"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/html"
+		Release.AspNetCompiler.PhysicalPath = "..\portfolio.aaronlademann.com\html\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\html\"
+		Release.AspNetCompiler.Updateable = "false"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2717"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{632CA964-BF41-458E-868B-69C97D05151B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "html", "html\", "{6DAFFEDA-154F-479F-8E55-9F87578251DA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/html(1)"
+		Debug.AspNetCompiler.PhysicalPath = "html\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\html(1)\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/html(1)"
+		Release.AspNetCompiler.PhysicalPath = "html\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\html(1)\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2731"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC018022-3EA1-4664-B189-F8F43136CD74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC018022-3EA1-4664-B189-F8F43136CD74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAFFEDA-154F-479F-8E55-9F87578251DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAFFEDA-154F-479F-8E55-9F87578251DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC018022-3EA1-4664-B189-F8F43136CD74} = {7A1FBA15-1546-4D63-A801-1E55EDBBC7A0}
+		{6DAFFEDA-154F-479F-8E55-9F87578251DA} = {632CA964-BF41-458E-868B-69C97D05151B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<span class="single-media-item">
+	<span class="title">{title} <a class="button" onclick="delete_media(this);">Delete</a></span> 
+	<span class="container">
+		<a href="http://www.youtube.com/watch?v={value}" target="_blank" alt="Preview youtube video" title="Preview youtube video">
+			<img src="http://i2.ytimg.com/vi/{value}/hqdefault.jpg" width="100%">
+		</a>
+		<span class="item-data">
+			<input type="hidden" name="portfolio_media_type_{index}" id="portfolio_media_type_{index}" value="youtube" />
+			<input type="hidden" name="portfolio_media_value_{index}" id="portfolio_media_value_{index}" value="{value}" />
+		</span>
+	<span>
+</span>

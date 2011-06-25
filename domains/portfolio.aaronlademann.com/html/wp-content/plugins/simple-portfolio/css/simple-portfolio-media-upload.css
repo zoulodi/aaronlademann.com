@@ -1,0 +1,10 @@
+.savebutton, div#media-upload-header, .media-title, .howto { display: none; }
+div#media-items div.media-item table tbody tr.post_title { display: none; }
+div#media-items div.media-item table tbody tr.image_alt { display: none; }
+div#media-items div.media-item table tbody tr.post_excerpt { display: none; }
+div#media-items div.media-item table tbody tr.post_content { display: none; }
+div#media-items div.media-item table tbody tr.url { display: none; }
+div#media-items div.media-item table tbody tr.align { display: none; }
+div#media-items div.media-item table tbody tr.image-size { display: none; }
+div#media-items div.media-item table tbody tr.submit { display: none; }
+input[type="submit"] { display: none; }

@@ -1,0 +1,15 @@
+# robots.txt file for aaronlademann.com 
+# send e-mail to aaron@aaronlademann.com  for problems 
+# last updated on 04-17-09 at 8:29 a.m. CSDT
+User-agent: *
+Disallow: /clients
+Disallow: /files/_projects
+Disallow: /files/49covproof_1UPCemail_arch.pdf
+Disallow: /files/BuddyBrokersInvestorGuide_web.pdf
+Disallow: /files/Lademann_Resume_0208.pdf
+Disallow: /BBtable_all.html
+Disallow: /BBtable.html
+Disallow: /home.htm
+Disallow: /mizzouBballComparisons.html
+Disallow: /momspics.html
+Disallow: /RRtable.html

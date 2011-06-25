@@ -1,0 +1,82 @@
+
+/* landscape orientation */
+body.landscape #content {
+	padding-left: 98px;
+	padding-right: 98px;
+}
+body.landscape #sidebar {
+	padding-left: 98px;
+}
+body.landscape #sidebar #logo {
+	margin-left: 40px;
+}
+
+/* portrait orientation */
+body.portrait #content, body.landscape.single #content {
+	padding-left: 18px;
+	padding-right: 18px;
+}
+body.portrait #sidebar, body.landscape.single #sidebar {
+	padding-left: 18px;
+}
+body.portrait #sidebar #logo, body.landscape.single #sidebar #logo {
+	margin-left: 18px;
+}
+
+
+/* Content */
+#content {
+    padding-bottom: 0 !important;
+		background-image: none;
+}
+/* fix any static widths */
+#bg-line, #masthead, #footer .copyright, #back-to-top { display: none !important; }
+#masthead, #contentWrap, #footer {
+    min-width: 0;
+    width: 100%;
+}
+#footer {
+    background-image: none;
+}
+#footer .nav #menu-item-16,
+#footer .nav #menu-item-19, #footer .nav #menu-item-20 { display: none; }
+.aafolio #footerNav {
+    right: auto;
+    left: 0;
+}
+#footer .nav ul { 
+    float: left !important; 
+    width: 100% !important;
+}
+#footer .nav a {
+	padding: 7px 18px 3px 18px;
+}
+/* use the sidebar as our main nav */
+#sidebar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.tax-skill-type #primary, .page.page-template-template-portfolio-php #primary {
+    margin-left: 0;
+}
+/*#logo a img { visibility: hidden; }  will be revealed via .js */
+#container { top: 0; }
+#sidebar { margin-top: 0 !important; }
+#primary, .single #primary, .page #primary { margin-left: 0; margin-top: 90px; }
+#sidebar .widget {
+    float: left;
+    margin-top: -20px;
+}
+#sidebar .widget-title { display: none; }
+#filter {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    float: left;
+}
+#filter li {
+    display: block;
+    float: left;
+    padding: 2px 5px;
+}

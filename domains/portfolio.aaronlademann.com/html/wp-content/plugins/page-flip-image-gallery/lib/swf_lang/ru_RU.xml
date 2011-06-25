@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <PAGE_SETTINGS 			value="Свойства страницы %d"/>
+    <LOADING_IMAGES 		value="Загрузка картинок"/>
+	<DEFAULT_SETTINGS		value="Свойства по умолчанию"/>
+	<IMAGE_SETTINGS			value="Свойства картинки"/>
+	<FIRST_PAGE_HELP		value="Переносите ваши картинки сюда"/>
+	<MY_PAGES				value="Страницы"/>
+	<MY_IMAGES				value="Картинки"/>
+	<EXIT_WITHOUT_SAVING	value="Выйти, не сохраняя"/>
+	<EXIT_AND_SAVE			value="СОХРАНИТЬ"/>
+	<USED_IMAGES_ONLY		value="[Текущий альбом]"/>
+	<DEFAULT_PAGE_SETTINGS	value="Свойства страницы по умолчанию"/>
+	<FRAME_COLOR			value="Цвет рамки"/>	
+	<FRAME_SIZE				value="Ширина рамки"/>
+	<SELECT_A_TEMPLATE		value="Выберите шаблон"/>
+	<USE_DEFAULT_SETTINGS	value="Использовать свойства по умолчанию"/>
+	<REMOVE_IMAGE			value="Убрать картинку"/>
+	<EDIT_DESCRIPTION		value="Изменить описание"/>
+	<SCALE_TYPE				value="Масштаб"/>
+	<SCALE_TO_FILL			value="Заполнить"/>
+	<SCALE_TO_FIT			value="Уместить"/>
+	<DO_NOT_SCALE			value="Не изменять"/>
+	<X_OFFSET				value="Смешение X"/>
+	<Y_OFFSET				value="Смещение Y"/>
+	<APPLY_TO_ALL_PAGE		value="Применить ко всем"/>
+	<DESCRIPTION_SAVE		value="Сохранить"/>
+	<DESCRIPTION_CANCEL		value="Отменить"/>
+	<PAGE_N					value="Страница %d"/>
+</data>

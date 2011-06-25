@@ -1,0 +1,32 @@
+/* ========= information ========= */
+#portfolio_meta_media .inside input[type="text"] { width: 99%;}
+#portfolio_meta_information .inside #portfolio_options input[class="code"] { width: 99%; }
+
+/* ========= media ========= */
+#portfolio_meta_media #portfolio-media-add { border: 0 none; display: none; }
+#portfolio_meta_media #portfolio-media-items { border: 0 none; }
+#portfolio_meta_media .single-media-item { background-color: #f9f9f9; margin-top: 10px;	margin-bottom: 10px; width: 99%; -moz-border-radius: 6px 6px 6px 6px; }
+#portfolio_meta_media .single-media-item .title { background-color: #f1f1f1; font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif; font-style: italic; font-size: 12px; padding: 5px;	-moz-border-radius: 6px 6px 0px 0px; height: 24px; line-height:24px;padding-left:10px;}
+#portfolio_meta_media .single-media-item .title:hover { cursor: move; }
+#portfolio_meta_media .single-media-item .title a.button { float:right; }
+#portfolio_meta_media #portfolio-media-add .single-media-item .title:hover { cursor: default; }
+#portfolio_meta_media #portfolio-media-add .single-media-item { background-color: #d3e3e9; margin-top: 10px; margin-bottom: 10px; width: 99%; -moz-border-radius: 6px 6px 6px 6px; }
+#portfolio_meta_media #portfolio-media-items .single-media-item { border: 1px solid #DEDEDE; }
+#portfolio_meta_media .single-media-item .container { padding: 10px; }
+#portfolio_meta_media .single-media-item .container input[type="button"] { margin-top: 8px;	width: 100px; }
+#portfolio_meta_media .single-media-item .container textarea { width: 99%; height: 160px; }
+#portfolio_meta_media .single-media-item .container .html-in-snippet { display: block; overflow: auto; max-height: 150px; margin-top: 10px; }
+#portfolio_meta_media .single-media-item .container .item-data textarea { display: none; }
+#portfolio_meta_media .single-media-item img { max-width: 300px; }
+#portfolio_meta_media li span { display: block; }
+#portfolio_meta_media #add_buttons input[type='button'] { display: block; width: 90%; margin-bottom: 5px;}
+
+/* ========= settings ========= */
+#credits { width: 100%; border-top: 1px dashed #ccc; margin-top: 50px;}
+#credits p { font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif; font-style: italic; font-size: 12px; padding: 5px; line-height: 7px;padding: 0;}
+.drag-handle { width: 14px; height: 20px; background-image: url('../images/drag_handle.png'); background-repeat: no-repeat; background-position: 0px 5px; display: block; float: left; padding: 0px 10px 0px 0px; cursor: move;}
+
+/* ========= columns ========= */
+.column-ptags li {list-style: none;}
+.column-clients li { list-style: none; }
+.column-pcategories li { list-style: none; }

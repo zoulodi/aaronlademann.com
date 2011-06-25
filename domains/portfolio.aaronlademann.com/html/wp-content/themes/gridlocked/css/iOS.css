@@ -1,0 +1,18 @@
+/* Content */
+#content {
+	padding-bottom: 0 !important;
+}
+/* fix any static widths */
+#bg-line, #masthead { display: none !important; }
+#masthead, #contentWrap, #footer {
+	min-width: auto;
+}
+/* use the sidebar as our main nav */
+#sidebar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.tax-skill-type #primary, .page.page-template-template-portfolio-php #primary {
+	margin-left: 0;
+}

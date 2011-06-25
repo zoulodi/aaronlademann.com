@@ -1,0 +1,74 @@
+s:4100:"<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:google="http://base.google.com/ns/1.0" xml:lang="en-US" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" xmlns:twitter="http://api.twitter.com/">
+  <id>tag:search.twitter.com,2005:search/from:ormanclark</id>
+  <link type="text/html" href="http://search.twitter.com/search?q=from%3Aormanclark" rel="alternate"/>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?q=from%3Aormanclark&amp;rpp=3" rel="self"/>
+  <title>from:ormanclark - Twitter Search</title>
+  <link type="application/opensearchdescription+xml" href="http://search.twitter.com/opensearch.xml" rel="search"/>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?q=from%3Aormanclark&amp;rpp=3&amp;since_id=73312345916571648" rel="refresh"/>
+  <twitter:warning>since_id removed for pagination.</twitter:warning>
+  <updated>2011-05-25T08:05:44Z</updated>
+  <openSearch:itemsPerPage>3</openSearch:itemsPerPage>
+  <link type="application/atom+xml" href="http://search.twitter.com/search.atom?max_id=73312345916571648&amp;page=2&amp;q=from%3Aormanclark&amp;rpp=3" rel="next"/>
+  <entry>
+    <id>tag:search.twitter.com,2005:73298691229892608</id>
+    <published>2011-05-25T08:05:44Z</published>
+    <link type="text/html" href="http://twitter.com/ormanclark/statuses/73298691229892608" rel="alternate"/>
+    <title>Happy hump day.</title>
+    <content type="html">Happy hump day.</content>
+    <updated>2011-05-25T08:05:44Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/1141363788/avatar-sep_normal.jpg" rel="image"/>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>ormanclark (Orman Clark)</name>
+      <uri>http://twitter.com/ormanclark</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:73062129934147584</id>
+    <published>2011-05-24T16:25:43Z</published>
+    <link type="text/html" href="http://twitter.com/ormanclark/statuses/73062129934147584" rel="alternate"/>
+    <title>@vpsnet Okidoke. Ticket 101378</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/vpsnet&quot;&gt;@vpsnet&lt;/a&gt; Okidoke. Ticket 101378</content>
+    <updated>2011-05-24T16:25:43Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/1141363788/avatar-sep_normal.jpg" rel="image"/>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>sv</twitter:lang>
+    <author>
+      <name>ormanclark (Orman Clark)</name>
+      <uri>http://twitter.com/ormanclark</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:73059236971679744</id>
+    <published>2011-05-24T16:14:14Z</published>
+    <link type="text/html" href="http://twitter.com/ormanclark/statuses/73059236971679744" rel="alternate"/>
+    <title>@DavidAirey Cheers David.</title>
+    <content type="html">&lt;a href=&quot;http://twitter.com/DavidAirey&quot;&gt;@DavidAirey&lt;/a&gt; Cheers David.</content>
+    <updated>2011-05-24T16:14:14Z</updated>
+    <link type="image/png" href="http://a3.twimg.com/profile_images/1141363788/avatar-sep_normal.jpg" rel="image"/>
+    <twitter:geo>
+    </twitter:geo>
+    <twitter:metadata>
+      <twitter:result_type>recent</twitter:result_type>
+    </twitter:metadata>
+    <twitter:source>&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;</twitter:source>
+    <twitter:lang>lt</twitter:lang>
+    <author>
+      <name>ormanclark (Orman Clark)</name>
+      <uri>http://twitter.com/ormanclark</uri>
+    </author>
+  </entry>
+</feed>
+";

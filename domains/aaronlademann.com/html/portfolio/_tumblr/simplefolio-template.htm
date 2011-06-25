@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=905, user-scalable=yes" />
+        <meta name="tumblr-theme" content="8955" />
+	
+	<meta name="text:First Nav Link" content="Work">
+	<meta name="text:Slogan" content=""/>
+	<meta name="text:Contact Email" content=""/>
+	<meta name="image:Sidebar" content=""/>
+	
+	<meta name="if:Show Address" content="0"/>
+	<meta name="text:Office Location" content=""/>
+	<meta name="text:Office Street" content=""/>
+	<meta name="text:Office City" content=""/>
+	<meta name="text:Office Postal" content=""/>
+	
+	{block:Description}
+	<meta name="description" content="{MetaDescription}" />
+  {/block:Description}
+	<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+	
+	<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+	<link rel="shortcut icon" href="{Favicon}" />  		 	
+	
+	<style type="text/css">
+		/* --- Reset --- */
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;}table{border-collapse:collapse;border-spacing:0;}ol,ul{list-style:none;}q:before,q:after,blockquote:before,blockquote:after{content:"";}
+
+		* {
+			outline: none;
+			-moz-outline: none;
+		}
+
+		body,
+		html {
+			height: 100%;
+		}
+
+		body {
+			font-family: "HelveticaNeue-Regular", 'Helvetica Neue', Helvetica, Arial, Tahoma, Verdana, sans-serif;
+			font-weight: 300;
+			text-align: center;
+			line-height: 19px;
+			background-color: #e8e8e8;
+			background-image: url(http://static.tumblr.com/l3dtuf9/nsskzr0jd/bg_tile.gif);
+			color: #525252;
+			text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+			-webkit-text-stroke: 1px transparent;
+		}
+
+		@media only screen and (max-device-width:480px) {
+			body {
+				-webkit-text-stroke: 0 black;
+			}
+		}
+
+		/* --- Typography --- */
+
+              
+		h1 {
+			font-size: 32px;
+			font-weight: 300;
+		}
+
+		h2 {
+			font-size: 21px;
+			font-weight: 200;
+			margin: 0 0 10px;
+			color: #616161;
+		}
+
+		h3 {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, Tahoma, Verdana, sans-serif;
+			font-size: 18px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+
+		h4 {
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		p,
+		#content ul li,
+		#content ol li {
+			font-family: Georgia, Times, serif;
+			font-size: 15px;
+			margin: 0 0 14px;
+		}
+
+		small {
+			font-family: "Helvetica Neue", Helvetica, Arial, Tahoma, Verdana, sans-serif;
+			font-size: 10px;
+		}
+		
+		strong {
+			font-weight: bold;
+		}
+		
+		address {
+			font-size: 12px;
+			font-style: normal;
+			text-transform: uppercase;
+		}
+
+		#content ul li,
+		#content ol li {
+			margin-left: 30px;
+		}
+
+		.left-column ul li {
+			list-style-type: disc;
+		}
+
+		.left-column ol li {
+			list-style-type: decimal;
+		}
+
+		#content blockquote {
+			font-style: italic;
+			font-size: 16px;
+			margin: 10px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		#content a {
+			color: #31302e;
+			text-decoration: underline;
+		}
+
+		#content a:hover {
+			text-decoration: none;
+		}
+
+		/* --- Layout --- */
+		#wrapper {
+			width: 100%;
+			display: block;
+			position: relative;
+		}
+
+		.container {
+			width: 940px;
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		/* --- Columns --- */
+		.left-column {
+			width: 540px;
+			margin: 0 0 30px;
+			float: left;
+		}
+
+		.right-column {
+			width: 360px;
+			margin: 0 0 30px;
+			float: right;
+		}
+
+		#header {
+			width: 100%;
+			margin: 20px 0 30px;
+			padding: 0 0 16px;
+			float: left;
+			display: block;
+			background: url(http://static.tumblr.com/l3dtuf9/kORkzr0jv/hr.gif) repeat-x bottom left;
+		}
+
+			#title {
+				max-width: 260px;
+				margin: 0 20px 0 0;
+				float: left;
+			}
+
+			#header h1 {
+				font-size: 26px;
+				line-height: 26px;
+				font-weight: bold;
+			}
+
+			#header h1 a {
+				color: #525252;
+			}
+
+			#header h1 a:active {
+				top: 1px;
+				position: relative;
+			}
+
+		#nav {
+			width: 550px;
+			margin: 3px 0 0;
+			float: left;
+			overflow: hidden;
+			line-height: 12px;
+		}
+
+			#nav ul {
+				margin: 0 0 0 -2px;
+			}
+
+			#nav ul li,
+			#nav ul li.active a,
+			#nav ul li.active a span,
+			.button,
+			.button a,
+			.button a span,
+			.back,
+			.back a,
+			.back a span,
+			ul.tags li,
+			ul.tags li a,
+			ul.tags li a span {
+				background-image: url(http://static.tumblr.com/l3dtuf9/bgFkzr0k9/buttons.png);
+			}
+			
+			.button,
+			.button span,
+			#nav ul li,
+			#nav ul li span {
+				cursor: pointer;
+			}
+
+			#nav ul li {
+				height: 25px;
+				margin: 0 0 0 -2px;
+				padding: 0 0 0 3px;
+				float: left;
+				overflow: hidden;
+				font-size: 14px;
+				font-weight: 800;
+				background-repeat: no-repeat;
+				background-position: left 2px;
+				vertical-align: baseline;
+			}
+
+			#nav ul li.active {
+				z-index: 10;
+				position: relative;
+				background-position: 100% -77px;
+				background-repeat: no-repeat;
+			}
+
+				#nav ul li a {
+					height: 25px;
+					color: #686868;
+					display: block;
+					position: relative;
+					-webkit-transition: color 0.2s ease-in;
+				}
+
+				#nav ul li a:hover {
+					color: #3e9ad4;
+				}			
+
+				#nav ul li.active a {
+					background-position: 0px -51px;
+					background-repeat: no-repeat;
+					color: #fff;
+					text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+				}
+
+					#nav ul li a span {
+						max-width: 200px;
+						height: 25px;
+						margin: 0 10px;
+						padding: 0 0 7px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						line-height: 24px;
+						position: relative;
+						float: left;
+					}
+
+					#nav ul li.active a span {
+						background-repeat: repeat-x;
+						background-position: left -25px;
+					}
+
+		.button,
+		ul.tags li {
+			height: 25px;
+			margin: 0 0 0 -2px;
+			padding: 0 0 0 3px;
+			float: left;
+			overflow: hidden;
+			font-size: 14px;
+			font-weight: 800;
+			background-repeat: no-repeat;
+			vertical-align: baseline;
+			z-index: 10;
+			position: relative;
+			background-position: 100% -155px;
+			background-repeat: no-repeat;
+		}
+
+			.button a,
+			ul.tags li a {
+				height: 25px;
+				color: #686868;
+				display: block;
+				position: relative;
+				background-position: 0px -129px;
+				background-repeat: no-repeat;
+				color: #fff;
+				text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+			}
+
+				.button a span,
+				ul.tags li a span {
+					max-width: 200px;
+					height: 25px;
+					margin: 0 10px;
+					padding: 0 0 7px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					line-height: 24px;
+					position: relative;
+					float: left;
+					background-repeat: repeat-x;
+					background-position: left -103px;
+				}
+
+		.back {
+			background-position: 100% -234px;
+		}
+
+			.back a {
+				background-position: 0px -208px;
+			}
+
+				.back a span {
+					margin: 0 5px 0 18px;
+					padding-left: 10px;
+					background-position: left -182px;
+				}
+
+		#content ul.tags li {
+			font-family: "HelveticaNeue-Regular", 'Helvetica Neue', Helvetica, Arial, Tahoma, Verdana, sans-serif;
+			font-size: 12px;
+			margin: 0 5px 0 0;
+			text-transform: uppercase;
+			background-position: 100% -312px;
+		}
+		
+		#content ul.tags li:active,
+		.button:active {
+			top: 1px;
+			position: relative;
+		}
+
+			ul.tags li a {
+				color: #fff;
+				background-position: 0px -286px;
+			}
+
+			ul.tags li:active {
+				position: relative;
+				top: 1px;
+			}
+
+				ul.tags li a span {
+					background-position: left -260px;
+				}
+
+		#content ul.tags li a,
+		#content .back a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		#content ul.tags li:active,
+		#content .back:active {
+			top: 1px;
+			position: relative;
+		}
+
+		#intro {
+			width: 100%;
+			margin: 20px 0;
+			padding: 0 0 16px;
+			float: left;
+			display: block;
+			text-align: center;
+		}
+
+			#intro h2 {
+				font-size: 40px;
+				line-height: 44px;
+				margin: 0 0 10px;
+			}
+
+			#intro p {
+				font-style: italic;
+			}
+
+		#projects-container {
+			width: 100%;
+			float: left;
+			display: block;
+			overflow: hidden;
+			background: url(http://static.tumblr.com/l3dtuf9/qYXkzr0kp/highlight.png) repeat-y top center;
+		}
+
+			#projects {
+				width: 981px;
+				margin: 0 auto;
+			}
+
+			#projects ul li {
+				width: 281px;
+				height: 260px;
+				margin: 0 23px;
+				padding: 0 0 50px;
+				float: left;
+				font-size: 13px;
+				font-weight: bold;
+				text-align: center;
+				text-transform: uppercase;
+				background: url(http://static.tumblr.com/l3dtuf9/scekzr0ln/img_bg_280.png) no-repeat 0 0;
+			}
+
+				#projects ul li a {
+					color: #525252;
+					-webkit-transition: all 0.15s ease-in;
+				}
+
+				#projects ul li a:hover {
+					color: #3e9ad4;
+				}
+
+				#projects ul li .img-wrap {
+					width: 270px;
+					height: 218px;
+					margin: 5px 0px 10px 5px;
+					overflow: hidden;
+					float: left;
+					position: relative;
+					opacity: 0.95;
+					cursor: pointer;
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					-webkit-transition: opacity 0.15s ease-in;
+				}
+
+				#projects ul li .img-wrap:hover {
+					opacity: 1;
+				}  		 	
+
+					#projects ul li .img-wrap img {
+						display: block;
+						opacity: 1;
+						position: absolute;
+						left: 0%;
+						top: 0%;
+					}
+
+				#projects ul li span.project-title {
+					width: 280px;
+					height: 25px;
+					overflow: hidden;
+					float: left;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+
+				}
+
+		.img-wrap-360 {
+			width: 350px;
+			height: 218px;
+			overflow: hidden;
+			float: left;
+			margin: 0 0 10px;
+			padding: 5px 6px 14px;
+			opacity: 0.95;
+			background: url(http://static.tumblr.com/l3dtuf9/3uekzr0ly/img_bg_360.png) no-repeat 0 0;
+			-webkit-transition: opacity 0.2s ease-in;
+		}
+
+		#banner {
+			width: 100%;
+			clear: both;
+			float: left;
+		}
+
+		.img-wrap-fullsize {
+			margin: 0 0 35px;
+			float: left;
+			border-left: 1px solid #bebebe;
+			border-right: 1px solid #bebebe;
+			border-bottom: 1px solid #838383;
+			-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+		}
+
+			.img-wrap-fullsize img {
+				padding: 5px;
+				display: block;
+				background: #fff;
+			}
+
+		#tag-header {
+			margin: 0 0 30px;
+		}
+
+
+		#content {
+			width: 100%;
+			margin: 10px 0;
+			padding: 0 0 16px;
+			float: left;
+			display: block;
+		}
+		
+		#content p {
+			line-height: 22px;
+		}
+		
+		#content h1 {
+			margin: 0 0 15px;
+			line-height: 32px;
+		}
+		
+		h1#page-title {
+			text-transform: uppercase;
+		}
+
+		#footer {
+			width: 100%;
+			padding: 10px 0 16px;
+			float: left;
+			background: url(http://static.tumblr.com/l3dtuf9/kORkzr0jv/hr.gif) repeat-x top left;
+		}
+
+		#footer h2 {
+			float: left;
+			margin: 0 10px 0 0;
+		}
+
+		.hr {
+			width: 100%;
+			height: 7px;
+			margin: 0 0 10px;
+			display: block;
+			float: left;
+			background: url(http://static.tumblr.com/l3dtuf9/0mskzr0mw/hr_4px.png) no-repeat 0 0;
+		}
+
+		.hr hr {
+			display: none;
+		}
+
+		.right {
+			float: right;
+		}
+
+		.left {
+			float: left;
+		}
+
+                #pagination { 
+                   float: right;
+margin-bottom: 8px;
+}
+
+	</style>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			var url = window.location.pathname;
+			var navitems = $('#nav ul li a');
+			var pathArray = url.split('/').pop();
+			
+			$.each(navitems, function(i, e) {
+				if($(this).attr('href') == url) {
+					$(this).parent().addClass('active');
+				}
+			});
+			
+			{block:IndexPage}
+			var projects = $('#projects ul li');
+			$.each(projects, function(i, e){
+				var postID = $(this).attr('id');
+				if ($('#' + postID + ' .source p').length > 1) {
+					var pageTitle = $('#' + postID + ' .source p:first').children();
+					$('li#' + postID + ' span#' + postID + '-link-title').text(pageTitle.text());
+				}
+			});
+			{/block:IndexPage}
+			
+			{block:PermalinkPage}
+			if ($('#description p').length > 1) {
+				var pageTitle = $('#description p:first').children();
+				$('#description p:first').hide();
+	    	$('h1#page-title').text(pageTitle.text());
+			}
+			
+			{/block:PermalinkPage}
+			
+			
+		});
+	</script>
+</head>  		 	
+<body>
+        <!-- Tumblr Theme #8955 -->
+	<div id="wrapper">
+		<div class="container">
+			<div id="header">
+				<div id="title">
+					<h1><a href="/">{Title}</a></h1>
+				</div>
+				{block:HasPages}
+				<div id="nav">
+					<ul>
+						{block:IfFirstNavLink}
+						<li{block:IndexPage} class="active"{/block:IndexPage}>
+							<a href="/">
+								<span>{text:First Nav Link}</span>
+							</a>
+						</li>
+						{/block:IfFirstNavLink}
+						{block:Pages}
+						<li>
+							<a href="{URL}">
+								<span>{Label}</span>
+							</a>
+						</li>
+						{/block:Pages}
+					</ul>
+				</div>
+				<!-- / div#nav -->
+				{/block:HasPages}
+				
+				{block:IfContactEmail}
+				<div class="button right">
+					<a href="mailto:{text:Contact Email}">
+						<span>Get In Touch</span>
+					</a>
+				</div>
+				{/block:IfContactEmail}
+			</div>
+			<!-- / div#header -->
+		</div>
+		<!-- / div.container -->
+		
+		{block:TagPage}
+		<div class="container">
+			<div id="tag-header">
+				<h2>{Tag} Projects</h2>
+			</div>
+		</div>
+		<!-- /div.container -->
+		{/block:TagPage}
+		
+		{block:IndexPage}
+		
+		{block:Description} 
+		<div class="container"{block:TagPage} style="display:none;"{/block:TagPage}>
+			<div id="intro">
+				<h2>{text:Slogan}</h2>
+				<p>{Description}</p>
+			</div>
+		</div>
+		<!-- /div.container -->
+		{/block:Description}
+			<div id="projects-container">
+				<div id="projects">
+					<ul>
+						{block:Posts}
+						
+						{block:Photo}
+						<li id="{PostID}">
+							<a href="{Permalink}" id="{PostID}-permalink">
+								<span class="img-wrap" style="background-image: url({PhotoURL-HighRes});"></span>
+								<span id="{PostID}-link-title" class="project-title"></span>
+							</a>
+							<div class="source" style="display:none;">{Caption}</div>
+						</li>
+						{/block:Photo}
+						
+						{block:Video}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Video}
+						
+						{block:Text}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Text}
+						
+						{block:Quote}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Quote}
+						
+						{block:Link}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Link}
+						
+						{block:Chat}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Chat}
+						
+						{block:Audio}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Audio}
+						
+						{/block:Posts}
+					</ul>
+
+
+
+
+
+				</div>
+
+
+			</div>
+
+
+
+		<!-- / div.container -->
+		{/block:IndexPage}
+
+
+
+	
+	{block:Posts}
+		
+		{block:PermalinkPage}
+		
+		{block:Photo}
+		<div class="container">
+			<div id="content">
+				<h1 id="page-title"></h1>
+				<div id="banner">
+					<div class="img-wrap-fullsize">
+						<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+				<div id="description" class="left-column">
+					{Caption}
+					<div class="back button">
+						<a href="/">
+							<span>View more work</span>
+						</a>
+					</div>
+				</div>
+				<!-- / div.left-column -->
+				
+				<div id="sidebar" class="right-column">
+					{block:HasTags}
+					<div class="hr">
+						<hr />
+					</div>
+					<h2>OUR ROLE</h2>
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">
+								<span>{Tag}</span>
+							</a>
+						</li>
+						{block:Tags}
+					</ul>
+					{/block:HasTags}
+				</div>
+				<!-- / div.right-column -->
+			</div>
+			<!-- / div#content -->
+		</div>
+		{/block:Photo}
+		{/block:PermalinkPage}
+		
+		{block:Text}
+		<div class="container">
+			<div id="content">
+				<div class="left-column">
+					{Body}
+				</div>
+				<!-- / div.left-column -->
+			
+				<div id="sidebar" class="right-column">
+					{block:IfSidebarImage}
+					<div class="img-wrap-360">
+						<img src="{image:Sidebar}" alt=""/>
+					</div>
+					{/block:IfSidebarImage}
+					{block:IfShowAddress}
+					<div class="hr">
+						<hr />
+					</div>
+					<h4>{text:Office Location}</h4>
+					<address>
+						{text:Office Street}<br />
+						{text:Office City}<br />
+						{text:Office Postal}
+					</address>
+					{/block:IfShowAddress}
+				</div>
+				<!-- / div.right-column -->
+			</div>
+			<!-- / div#content -->
+		</div>
+		<!-- /div.container -->
+		{/block:Text}
+		
+		
+		{/block:Posts}
+	
+
+		{block:IfContactEmail}
+		<div class="container">
+	{block:Pagination} 
+			<div id="pagination">
+				{block:PreviousPage}
+				<div class="button">
+					<a href="{PreviousPage}"><span>{lang:Older}</span></a>
+				</div>
+				{/block:PreviousPage}
+				{block:NextPage}
+				<div class="button">
+					<a href="{NextPage}"><span>{lang:Newer}</span></a>
+				</div>
+				{/block:NextPage}
+			</div>
+			<!-- / div#pagination -->
+			{/block:Pagination}
+
+
+			<div id="footer">
+				<h2>Interested in working with us?</h2>
+				<div class="button">
+					<a href="mailto:{text:Contact Email}">
+						<span>Get In Touch</span>
+					</a>
+				</div>
+			</div>
+			<!-- / div#footer -->
+		</div>
+		<!-- /div.container -->
+		{/block:IfContactEmail}
+	</div>  		 	
+	<!-- / div#wrapper -->
+</body>
+<!--
+    This Tumblr Theme and all of its CSS, Javascript,
+    and media assets are subject to Tumblr's Terms of Service:
+
+    http://www.tumblr.com/terms_of_service
+-->
+</html>

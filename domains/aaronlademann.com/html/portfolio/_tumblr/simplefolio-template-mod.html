@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=905, user-scalable=yes" />
+        <meta name="tumblr-theme" content="8955" />
+	
+	<meta name="text:First Nav Link" content="Work">
+	<meta name="text:Slogan" content=""/>
+	<meta name="text:Contact Email" content=""/>
+	<meta name="image:Sidebar" content=""/>
+	
+	<meta name="if:Show Address" content="0"/>
+	<meta name="text:Office Location" content=""/>
+	<meta name="text:Office Street" content=""/>
+	<meta name="text:Office City" content=""/>
+	<meta name="text:Office Postal" content=""/>
+	
+	{block:Description}
+	<meta name="description" content="{MetaDescription}" />
+  {/block:Description}
+	<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+	
+	<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+	<link rel="shortcut icon" href="{Favicon}" />
+    <link rel="stylesheet" type="text/css" href="http://aaronlademann.com/_includes/_css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="http://aaronlademann.com/_includes/_css/portfolio.css" media="all" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			var url = window.location.pathname;
+			var navitems = $('#nav ul li a');
+			var pathArray = url.split('/').pop();
+			
+			$.each(navitems, function(i, e) {
+				if($(this).attr('href') == url) {
+					$(this).parent().addClass('active');
+				}
+			});
+			
+			{block:IndexPage}
+			var projects = $('#projects ul li');
+			$.each(projects, function(i, e){
+				var postID = $(this).attr('id');
+				if ($('#' + postID + ' .source p').length > 1) {
+					var pageTitle = $('#' + postID + ' .source p:first').children();
+					$('li#' + postID + ' span#' + postID + '-link-title').text(pageTitle.text());
+				}
+			});
+			{/block:IndexPage}
+			
+			{block:PermalinkPage}
+			if ($('#description p').length > 1) {
+				var pageTitle = $('#description p:first').children();
+				$('#description p:first').hide();
+	    	$('h1#page-title').text(pageTitle.text());
+			}
+			
+			{/block:PermalinkPage}
+			
+			
+		});
+	</script>
+</head>  		 	
+<body>
+        <!-- Tumblr Theme #8955 -->
+	<div id="wrapper">
+		<div class="container">
+			<div id="header">
+				<div id="title">
+					<h1><a href="/">{Title}</a></h1>
+				</div>
+				{block:HasPages}
+				<div id="nav">
+					<ul>
+						{block:IfFirstNavLink}
+						<li{block:IndexPage} class="active"{/block:IndexPage}>
+							<a href="/">
+								<span>{text:First Nav Link}</span>
+							</a>
+						</li>
+						{/block:IfFirstNavLink}
+						{block:Pages}
+						<li>
+							<a href="{URL}">
+								<span>{Label}</span>
+							</a>
+						</li>
+						{/block:Pages}
+					</ul>
+				</div>
+				<!-- / div#nav -->
+				{/block:HasPages}
+				
+				{block:IfContactEmail}
+				<div class="button right">
+					<a href="mailto:{text:Contact Email}">
+						<span>Get In Touch</span>
+					</a>
+				</div>
+				{/block:IfContactEmail}
+			</div>
+			<!-- / div#header -->
+		</div>
+		<!-- / div.container -->
+		
+		{block:TagPage}
+		<div class="container">
+			<div id="tag-header">
+				<h2>{Tag} Projects</h2>
+			</div>
+		</div>
+		<!-- /div.container -->
+		{/block:TagPage}
+		
+		{block:IndexPage}
+		
+		{block:Description} 
+		<div class="container"{block:TagPage} style="display:none;"{/block:TagPage}>
+			<div id="intro">
+				<h2>{text:Slogan}</h2>
+				<p>{Description}</p>
+			</div>
+		</div>
+		<!-- /div.container -->
+		{/block:Description}
+			<div id="projects-container">
+				<div id="projects">
+					<ul>
+						{block:Posts}
+						
+						{block:Photo}
+						<li id="{PostID}">
+							<a href="{Permalink}" id="{PostID}-permalink">
+								<span class="img-wrap" style="background-image: url({PhotoURL-HighRes});"></span>
+								<span id="{PostID}-link-title" class="project-title"></span>
+							</a>
+							<div class="source" style="display:none;">{Caption}</div>
+						</li>
+						{/block:Photo}
+						
+						{block:Video}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Video}
+						
+						{block:Text}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Text}
+						
+						{block:Quote}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Quote}
+						
+						{block:Link}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Link}
+						
+						{block:Chat}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Chat}
+						
+						{block:Audio}
+						<li id="{PostID}">
+							<a href="#" onclick="javascript:return false;" id="{PostID}-permalink">
+								<span class="img-wrap">
+									<img src="http://static.tumblr.com/l3dtuf9/j4jkzr0ne/photo_only.gif" alt="Photo posts only"/>
+								</span>
+								<span class="project-title">This template uses photos only</span>
+							</a>
+						</li>
+						{/block:Audio}
+						
+						{/block:Posts}
+					</ul>
+
+
+
+
+
+				</div>
+
+
+			</div>
+
+
+
+		<!-- / div.container -->
+		{/block:IndexPage}
+
+
+
+	
+	{block:Posts}
+		
+		{block:PermalinkPage}
+		
+		{block:Photo}
+		<div class="container">
+			<div id="content">
+				<h1 id="page-title"></h1>
+				<div id="banner">
+					<div class="img-wrap-fullsize">
+						<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+				<div id="description" class="left-column">
+					{Caption}
+					<div class="back button">
+						<a href="/">
+							<span>View more work</span>
+						</a>
+					</div>
+				</div>
+				<!-- / div.left-column -->
+				
+				<div id="sidebar" class="right-column">
+					{block:HasTags}
+					<div class="hr">
+						<hr />
+					</div>
+					<h2>OUR ROLE</h2>
+					<ul class="tags">
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">
+								<span>{Tag}</span>
+							</a>
+						</li>
+						{block:Tags}
+					</ul>
+					{/block:HasTags}
+				</div>
+				<!-- / div.right-column -->
+			</div>
+			<!-- / div#content -->
+		</div>
+		{/block:Photo}
+		{/block:PermalinkPage}
+		
+		{block:Text}
+		<div class="container">
+			<div id="content">
+				<div class="left-column">
+					{Body}
+				</div>
+				<!-- / div.left-column -->
+			
+				<div id="sidebar" class="right-column">
+					{block:IfSidebarImage}
+					<div class="img-wrap-360">
+						<img src="{image:Sidebar}" alt=""/>
+					</div>
+					{/block:IfSidebarImage}
+					{block:IfShowAddress}
+					<div class="hr">
+						<hr />
+					</div>
+					<h4>{text:Office Location}</h4>
+					<address>
+						{text:Office Street}<br />
+						{text:Office City}<br />
+						{text:Office Postal}
+					</address>
+					{/block:IfShowAddress}
+				</div>
+				<!-- / div.right-column -->
+			</div>
+			<!-- / div#content -->
+		</div>
+		<!-- /div.container -->
+		{/block:Text}
+		
+		
+		{/block:Posts}
+	
+
+		{block:IfContactEmail}
+		<div class="container">
+	{block:Pagination} 
+			<div id="pagination">
+				{block:PreviousPage}
+				<div class="button">
+					<a href="{PreviousPage}"><span>{lang:Older}</span></a>
+				</div>
+				{/block:PreviousPage}
+				{block:NextPage}
+				<div class="button">
+					<a href="{NextPage}"><span>{lang:Newer}</span></a>
+				</div>
+				{/block:NextPage}
+			</div>
+			<!-- / div#pagination -->
+			{/block:Pagination}
+
+
+			<div id="footer">
+				<h2>Interested in working with us?</h2>
+				<div class="button">
+					<a href="mailto:{text:Contact Email}">
+						<span>Get In Touch</span>
+					</a>
+				</div>
+			</div>
+			<!-- / div#footer -->
+		</div>
+		<!-- /div.container -->
+		{/block:IfContactEmail}
+	</div>  		 	
+	<!-- / div#wrapper -->
+</body>
+<!--
+    This Tumblr Theme and all of its CSS, Javascript,
+    and media assets are subject to Tumblr's Terms of Service:
+
+    http://www.tumblr.com/terms_of_service
+-->
+</html>

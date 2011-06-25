@@ -1,0 +1,92 @@
+/* CSS Document */
+#portfolio-wrap {
+	float:left;
+	width:800px;
+	padding-left:125px;
+	padding-top:30px;
+	/* BOX MODEL HACK */
+		voice-family: "\"}\""; 
+  		voice-family:inherit;
+  		width:675px;
+}
+
+#portfolio-itemWrap {
+	float:left;
+	width:470px;
+}
+#portfolio-rightMenu {
+	float:left;
+	width:205px;
+	padding:0px 30px;
+	/* BOX MODEL HACK */
+		voice-family: "\"}\""; 
+  		voice-family:inherit;
+  		width:145px;
+}
+#portfolio-rightMenuBox {
+	float:left;
+	width:143px;
+	height:269px;
+	padding-top:139px;
+	background:#61767c url(../images/portfolio-menubg.jpg) top left no-repeat;
+	border:1px solid #00aad8;
+	/* BOX MODEL HACK */
+		voice-family: "\"}\""; 
+  		voice-family:inherit;
+  		height:130px;
+}
+#portfolio-rightMenuBox a {
+	float:left;
+	display:block;
+	width:143px;
+	height:30px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-variant:small-caps;
+	line-height:30px;
+	text-align:center;
+	color:#d1d3d3;
+	text-decoration:none;
+	background-image:url(../images/portfolio-menuNav.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+/* IE DUPLICATE CHARACTER BUG FIX */
+* html #portfolio-rightMenuBox a {
+	margin-right:-3px;
+}
+#portfolio-rightMenuBox a:hover {
+	background-position:top;
+	text-decoration:underline;
+	color:#00aad8;
+}
+#portfolio-item a {
+	float:left;
+	width:470px;
+	height:145px;
+	border:1px solid #61767c;
+	padding:3px;
+	margin-bottom:15px;
+	background:#e6e8ea;
+	text-decoration:none;
+	/* BOX MODEL HACK */
+		voice-family: "\"}\""; 
+  		voice-family:inherit;
+  		width:462px;
+		height:137px;
+}
+#portfolio-item a:hover {
+	background:#d5d6d7;
+	border:1px solid #00aad8;
+}
+#portfolio-caption {
+	float:left;
+	cursor:pointer;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:1em;
+	font-variant:normal;
+	font-weight:bold;
+	color:#00aad8;
+	padding-top:4px;
+	line-height:1.5em;
+}
+.brownName {color:#493103; font-weight:normal;}

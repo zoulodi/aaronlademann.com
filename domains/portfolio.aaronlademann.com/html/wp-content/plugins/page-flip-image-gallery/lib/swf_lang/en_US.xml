@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <PAGE_SETTINGS 			value="Page %d settings"/>
+    <LOADING_IMAGES 		value="Loading images"/>
+	<DEFAULT_SETTINGS		value="Default settings"/>
+	<IMAGE_SETTINGS			value="Image settings"/>
+	<FIRST_PAGE_HELP		value="Drag and drop your images here"/>
+	<MY_PAGES				value="My Pages"/>
+	<MY_IMAGES				value="My Images"/>
+	<EXIT_WITHOUT_SAVING	value="Cancel changes"/>
+	<EXIT_AND_SAVE			value="SAVE"/>
+	<USED_IMAGES_ONLY		value="[this album]"/>
+	<DEFAULT_PAGE_SETTINGS	value="Default page settings"/>
+	<FRAME_COLOR			value="frame color"/>
+	<FRAME_SIZE				value="frame size"/>
+	<SELECT_A_TEMPLATE		value="Select a layout"/>
+	<USE_DEFAULT_SETTINGS	value="Use default settings"/>
+	<REMOVE_IMAGE			value="Remove image"/>
+	<EDIT_DESCRIPTION		value="Description"/>
+	<SCALE_TYPE				value="Scale type"/>
+	<SCALE_TO_FILL			value="Scale To Fill"/>
+	<SCALE_TO_FIT			value="Scale To Fit"/>
+	<DO_NOT_SCALE			value="Don't Scale"/>
+	<X_OFFSET				value="X offset"/>
+	<Y_OFFSET				value="Y offset"/>
+	<APPLY_TO_ALL_PAGE		value="Apply To All Page"/>
+	<DESCRIPTION_SAVE		value="Save"/>
+	<DESCRIPTION_CANCEL		value="Cancel"/>
+	<PAGE_N					value="Page %d"/>
+</data>

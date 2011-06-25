@@ -1,0 +1,183 @@
+/*==========================================================================================
+	
+Light CSS File
+This file contains styles related to the colour scheme of the theme
+
+==========================================================================================*/
+
+body { background: url(../images/light/body_bg.gif) repeat fixed; }
+
+pre { background: url(../images/light/pre_bg.png); }
+
+blockquote,
+#comments,
+#respond-title,
+#footer a,
+#load-more-link a span,
+#load-more-link a:hover span { color: #66696d; }
+
+#comments span,
+#respond-title span {
+	color: #81858a;
+}
+
+#footer a {
+	color: #66696d;
+}
+
+#commentform span,
+#single-sidebar a
+.entry-meta a,
+.comment-met a {
+	color: #b3b7bc;
+}
+
+.comment-meta a:hover,
+.entry-meta a:hover {
+	color: #66696d;
+}
+
+#submit,
+input,
+textarea,
+.tabs ul.nav li a,
+body,
+a { color: #96999d;}
+
+#tagline {
+	color: #7b7d80;
+}
+
+#footer a:hover,
+.tabs ul.nav li.ui-tabs-selected a,
+.tabs ul.nav li a:hover,
+#submit:hover,
+#single-sidebar a:hover,
+#footer a:hover,
+#load-more-link a:hover,
+a:hover { color: #000; }
+
+.comment-body p a,
+.comment-author a:hover,
+.entry-content a,
+.entry-title a:hover {
+	color: #3a3c3d;
+}
+
+.widget-title { color: #3a3c3d; }
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.page.page-template-template-portfolio-php .entry-title,
+.entry-title,
+.entry-title a { color: #66696d; }
+
+.format-link .entry-title a,
+.format-quote blockquote {
+	color: #f1f1f1;
+}
+
+.contactform input,
+.contactform textarea { color: #96999D; }
+
+.format-link .entry-title a:hover { color: #fff; }
+
+.contactform #submit:hover span.icon,
+.comment-body p a:hover,
+#submit:hover span.icon,
+.single-page-navigation a:hover,
+#back-to-top a:hover .icon,
+.entry-content a:hover,
+#overlay-inner a:hover,
+.current-cat a,
+.current-page a,
+.current-menu-item a { background-color: #feea36; }
+
+.comment-body p a:hover,
+.entry-content a:hover,
+#overlay-inner a:hover,
+.current-cat a,
+.current-cat a:hover,
+.current-page a,
+.current-page a:hover,
+.current-menu-item a,
+.current-menu-item a:hover{ color: #3a3c3d; }
+
+
+.comment-body,
+input,
+textarea,
+#load-more-link a,
+.hentry { background-color: #ffffff; }
+
+.single-page-navigation a,
+#submit span.icon,
+#back-to-top a .icon {
+	background-color: #66696d;
+}
+
+.comment-body p,
+#load-more-link a,
+.hentry { color: #96999d; }
+
+.format-quote .quote-wrap .icon{ background: url(../images/light/quote.png) no-repeat; }
+
+
+#single-sidebar .portfolio-link a .icon,
+#single-sidebar .link a span.icon,
+a .overlay .icon,
+.format-link .entry-title .icon,
+.arrow,
+.format-gallery  ul.pagination li a,
+.single-portfolio  ul.pagination li a,
+.like-count .icon,
+.comment-count .icon,
+.published .icon { background-image: url(../images/light/sprite.png); }
+
+#commentform small,
+#single-sidebar .like-count a.active,
+#single-sidebar .like-count a:hover,
+.like-count a.active,
+.like-count a:hover { color: #f56559; }
+
+.contactform #submit span.icon,
+.format-quote .quote-wrap,
+.format-link .entry-title { background-color: #2d2e2f; }
+
+.toggle h4 { background-color: #f1f1f1; border-bottom: 1px solid #fff; }
+
+.contactform input,
+.contactform textarea {
+	background-color: #efefef;
+}
+
+.tabs .tab,
+.tabs ul.nav li.ui-tabs-selected a {
+	background: #f1f1f1;
+	color: #96999D;
+}
+
+.toggle-inner { background: #fff; }
+
+.tabs ul.nav li a { background-color: #fff; }
+
+.comment-author,
+.comment-author a { color: #66696d; }
+
+.comment .avatar { border-right: 1px solid #dddddd; }
+
+blockquote,
+.format-link .entry-title a { border-left: 1px solid #4d4f51; }
+
+.overlay { background: url(../images/light/overlay.png) repeat; }
+
+.format-standard .entry-title,
+.page .entry-title { border-bottom: 1px solid #f3f3f3; }
+
+#bg-line { background: url(../images/light/line.png) no-repeat; }
+
+.line { border-bottom: 1px solid #d6d6d6; }

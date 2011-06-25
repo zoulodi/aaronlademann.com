@@ -1,0 +1,143 @@
+/*==========================================================================================
+	
+Dark CSS File
+This file contains styles related to the colour scheme of the theme
+
+==========================================================================================*/
+
+body { background: url(../images/dark/body_bg.gif) repeat fixed; }
+
+pre { background: url(../images/dark/pre_bg.png); }
+
+blockquote,
+.comment-meta,
+.comment-meta a,
+#commentform span,
+#comments span,
+#respond-title span,
+.entry-meta a,
+#footer a,
+#load-more-link a span,
+#load-more-link a:hover span { color: #81858a; }
+
+#submit,
+input,
+textarea,
+.tabs ul.nav li a,
+#single-sidebar a,
+#tagline,
+body,
+a { color: #b3b7bc;}
+
+.tabs ul.nav li.ui-tabs-selected a,
+.tabs ul.nav li a:hover,
+.comment-body p a,
+.comment-author a:hover,
+#submit:hover,
+#single-sidebar a:hover,
+#footer a:hover,
+#load-more-link a:hover,
+.entry-title a:hover,
+.entry-content a,
+a:hover { color: #f0f3f7; }
+
+.widget-title { color: #8d9094; }
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.page.page-template-template-portfolio-php .entry-title,
+.format-quote blockquote,
+.entry-title,
+.entry-title a { color: #d2d6db; }
+
+.contactform #submit:hover span.icon,
+.comment-body p a:hover,
+#submit:hover span.icon,
+.single-page-navigation a:hover,
+#back-to-top a:hover .icon,
+.entry-content a:hover,
+#overlay-inner a:hover,
+.current-cat a,
+.current-page a,
+.current-menu-item a { background-color: #feea36; }
+
+#commentform small { color: #feea36; }
+
+.comment-body p a:hover,
+.entry-content a:hover,
+#overlay-inner a:hover,
+.current-cat a,
+.current-cat a:hover,
+.current-page a,
+.current-page a:hover,
+.current-menu-item a,
+.current-menu-item a:hover { color: #3a3c3d; }
+
+
+.comment-body,
+#submit span.icon,
+input,
+textarea,
+.single-page-navigation a,
+#back-to-top a .icon,
+#load-more-link a,
+.hentry { background-color: #3a3c3d; }
+
+.comment-body p,
+#load-more-link a,
+.hentry { color: #a8acb1; }
+
+.format-quote .quote-wrap .icon{ background: url(../images/dark/quote.png) no-repeat; }
+
+
+#single-sidebar .portfolio-link a .icon,
+#single-sidebar .link a span.icon,
+a .overlay .icon,
+.format-link .entry-title .icon,
+.arrow,
+.format-gallery  ul.pagination li a,
+.single-portfolio  ul.pagination li a,
+.like-count .icon,
+.comment-count .icon,
+.published .icon { background-image: url(../images/dark/sprite.png); }
+
+#single-sidebar .like-count a.active,
+#single-sidebar .like-count a:hover,
+.like-count a.active,
+.like-count a:hover { color: #f56559; }
+
+.toggle h4,
+.toggle-inner,
+.tabs .tab,
+.tabs ul.nav li.ui-tabs-selected a,
+.contactform #submit span.icon,
+.contactform input,
+.contactform textarea,
+.format-quote .quote-wrap,
+.format-link .entry-title { background-color: #2d2e2f; }
+
+.tabs ul.nav li a {
+	background-color: #313233;
+}
+
+.comment-author,
+.comment-author a { color: #d2d6db; }
+
+.comment .avatar { border-right: 1px solid #4d4f51; }
+
+blockquote,
+.format-link .entry-title a { border-left: 1px solid #4d4f51; }
+
+.overlay { background: url(../images/dark/overlay.png) repeat; }
+
+.toggle h4,
+.format-standard .entry-title,
+.page .entry-title { border-bottom: 1px solid #444648; }
+
+#bg-line { background: url(../images/dark/line.png) no-repeat; }
+
+.line { border-bottom: 1px solid #66696d; }

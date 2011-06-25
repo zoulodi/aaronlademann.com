@@ -1,0 +1,627 @@
+/* --- Reset --- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;}table{border-collapse:collapse;border-spacing:0;}ol,ul{list-style:none;}q:before,q:after,blockquote:before,blockquote:after{content:"";}
+
+* {
+	outline: none;
+	-moz-outline: none;
+}
+
+
+body { background: url(http://aaronlademann.com/_images/_template/_portfolio/bg_tile.gif) left top repeat; }
+#masthead { background: url(http://aaronlademann.com/_images/_template/body-bg.gif) left top repeat-x; }
+#contentWrap {
+	font-family: "HelveticaNeue-Regular", 'Helvetica Neue', Helvetica, Arial, Tahoma, Verdana, sans-serif;
+	font-weight: 300;
+	text-align: center;
+	line-height: 19px;
+	color: #525252;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8);
+	-webkit-text-stroke: 1px transparent;
+}
+
+@media only screen and (max-device-width:480px) {
+	body {
+		-webkit-text-stroke: 0 black;
+	}
+}
+
+/* --- Typography --- */
+
+	  
+h1, .h1 {
+	font-size: 32px;
+        line-height: 28px;
+	font-weight: 300;
+}
+
+h2, .h2 {
+	font-size: 21px;
+	font-weight: 200;
+	margin: 0 0 10px;
+	color: #616161;
+}
+.meta h2, .meta .h2 { float: left; margin-right: 10px; font-size: 17px; line-height: 18px; margin-top: -2px !important; }
+.meta { float: right; }
+
+h3, .h3 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, Tahoma, Verdana, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h4, .h4 {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#contentWrap p,
+#contentWrap #content ul li,
+#contentWrap #content ol li {
+/*	font-family: Georgia, Times, serif;
+	font-size: 15px;*/
+	margin: 0 0 14px;
+}
+
+#contentWrap small {
+	font-family: "Helvetica Neue", Helvetica, Arial, Tahoma, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+#contentWrap strong {
+	font-weight: bold;
+}
+
+#contentWrap address {
+	font-size: 12px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+#contentWrap #content ul li,
+#contentWrap #content ol li {
+	margin-left: 30px;
+}
+
+#contentWrap .left-column ul li {
+	list-style-type: disc;
+}
+
+#contentWrap .left-column ol li {
+	list-style-type: decimal;
+}
+
+#contentWrap #content blockquote {
+	font-family: Georgia, Times, serif;
+font-style: italic;
+	font-size: 16px;
+	margin: 10px 40px;
+}
+
+/*#contentWrap a {
+	text-decoration: none;
+}
+
+#contentWrap #content a {
+	color: #31302e;
+	text-decoration: underline;
+}
+
+#contentWrap #content a:hover {
+	text-decoration: none;
+}*/
+
+/* --- Layout --- */
+#contentWrap #wrapper {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+#contentWrap .container {
+	width: 940px;
+	margin: 0 auto;
+	text-align: left;
+clear: both;
+}
+
+/* --- Columns --- */
+#contentWrap .left-column {
+	width: 540px;
+	margin: 0 0 30px;
+	float: left;
+}
+
+#contentWrap .right-column {
+	width: 360px;
+	margin: 0 0 30px;
+	float: right;
+}
+
+#contentWrap #header {
+	width: 100%;
+	margin: 10px 0 20px 0 30px;
+	padding: 0 0 15px 0;
+	float: left;
+	display: block;
+	background: url(http://aaronlademann.com/_images/_template/_portfolio/hr.gif) repeat-x bottom left;
+}
+
+        #contentWrap #header .button { display: none; }        
+
+
+	#contentWrap #title {
+		max-width: 100%; /* 50% if the nav ul system needs to be there. */
+		margin: 0 0 0 0;
+		float: left;
+	}
+	
+	/* breadcrumb title system */	
+	/* global attributes */
+	.crumbTitles { width: 100%; }
+	.crumbTitles a { float: left; cursor: pointer !important; }
+	.crumbTitles a:hover { color: #09f !important; }
+	.crumbTitles #page-title { text-transform: capitalize !important; }
+	.crumbTitles h1, .crumbTitles .h1 {
+		
+		color: #85878c;
+		margin: 0;
+	}
+	.crumbTitles .active { color: Black; }
+	.crumbTitles .divider {
+		/* container for the "/" symbol between each link in the trail */
+		float: left;
+		width: 28px;
+		height: 30px;
+		color: #b3b4b7;
+		background: transparent url(http://aaronlademann.com/_images/_template/_portfolio/breadcrumb_home-symbol.png) right top no-repeat;
+	}
+	
+	.crumbTitles #home {
+		display: block;
+		width: 72px;
+		height: 30px;
+		background: transparent url(http://aaronlademann.com/_images/_template/_portfolio/breadcrumb_home-symbol.png) left top no-repeat;
+		text-decoration: none !important;
+		text-indent: -999em;
+	}
+	.crumbTitles #home:hover {
+		background-position: left bottom;
+	}
+
+
+	#contentWrap #header h1, #contentWrap #header .h1 {
+		font-size: 26px;
+        letter-spacing: -1px;
+		line-height: 26px;
+		font-weight: bold;
+        cursor: default;
+	}
+
+	#contentWrap #header h1 a, #contentWrap #header .h1 a {
+		color: #525252;
+	}
+
+	#contentWrap #header h1 a:active, #header .h1 a:active {
+		top: 1px;
+		position: relative;
+	}
+
+#contentWrap #nav {
+	width: 43%;
+	margin: 3px 0 0 3px;
+	float: left;
+	overflow: hidden;
+	line-height: 12px;
+}
+
+	#contentWrap #nav ul {
+		margin: 0 0 0 -2px;
+	}
+
+	#contentWrap #nav ul li,
+	#contentWrap #nav ul li.active a,
+	#contentWrap #nav ul li.active a span,
+	#contentWrap .button,
+	#contentWrap .button a,
+	#contentWrap .button a span,
+	#contentWrap .back,
+	#contentWrap .back a,
+	#contentWrap .back a span {
+		background-image: url(http://aaronlademann.com/_images/_template/_portfolio/buttons2.png);
+	}
+	
+	#contentWrap .button,
+	#contentWrap .button span,
+	#contentWrap #nav ul li,
+	#contentWrap #nav ul li span {
+		cursor: pointer;
+	}
+
+	#contentWrap #nav ul li {
+		height: 25px;
+		margin: 0 0 0 -2px;
+		padding: 0 0 0 3px;
+		float: left;
+		overflow: hidden;
+		font-size: 14px;
+		font-weight: 800;
+		background-repeat: no-repeat;
+		background-position: left 2px;
+		vertical-align: baseline;
+	}
+
+	#contentWrap #nav ul li.active {
+		z-index: 10;
+		position: relative;
+		background-position: 100% -77px;
+		background-repeat: no-repeat;
+	}
+
+		#contentWrap #nav ul li a {
+			height: 25px;
+			color: #686868;
+			display: block;
+			position: relative;
+			-webkit-transition: color 0.2s ease-in;
+		}
+
+		#contentWrap #nav ul li a:hover {
+			color: #3e9ad4;
+		}			
+
+		#contentWrap #nav ul li.active a {
+			background-position: 0px -51px;
+			background-repeat: no-repeat;
+			color: #fff;
+			text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+		}
+
+			#contentWrap #nav ul li a span {
+				max-width: 200px;
+				height: 25px;
+				margin: 0 10px;
+				padding: 0 0 7px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				line-height: 24px;
+				position: relative;
+				float: left;
+			}
+
+			#contentWrap #nav ul li.active a span {
+				background-repeat: repeat-x;
+				background-position: left -25px;
+			}
+
+#contentWrap .button,
+#contentWrap ul.tags li {
+	height: 25px;
+	margin: 0 0 0 -2px;
+	padding: 0 0 0 3px;
+	float: left;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 800;
+	background-repeat: no-repeat;
+	vertical-align: baseline;
+	z-index: 10;
+	position: relative;
+	background-position: 100% -155px;
+	background-repeat: no-repeat;
+}
+
+	#contentWrap .button a,
+	#contentWrap ul.tags li a {
+		height: 25px;
+		color: #686868;
+		display: block;
+		position: relative;
+		background-position: 0px -129px;
+		background-repeat: no-repeat;
+		color: #fff;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+	}
+
+		#contentWrap .button a span {
+			max-width: 200px;
+			height: 25px;
+			margin: 0 10px;
+			padding: 0 0 7px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			line-height: 24px;
+			position: relative;
+			float: left;
+			background-repeat: repeat-x;
+			background-position: left -103px;
+		}
+
+#contentWrap ul.tags li { height: 30px; }
+#contentWrap ul.tags li a {
+    line-height: 18px;
+    height: 18px;
+    padding: 0 10px;
+    background-color: rgba(0,0,0,.5);
+    /* ie only */
+    background-color: #777/9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-box-shadow: 0 1px rgba(255,255,255,1.0);
+    -webkit-box-shadow: 0 1px rgba(255,255,1.0);
+}
+#contentWrap ul.tags li a:hover { 
+    background-color: rgba(0,0,0,.8);
+    /* ie only */
+    background-color: #333/9;
+}
+
+#contentWrap .back {
+	background-position: 100% -234px;
+}
+
+	#contentWrap .back a {
+		background-position: 0px -208px;
+	}
+
+		#contentWrap .back a span {
+			margin: 0 5px 0 18px;
+			padding-left: 10px;
+			background-position: left -182px;
+		}
+
+#contentWrap #content ul.tags li {
+	font-family: "HelveticaNeue-Regular", 'Helvetica Neue', Helvetica, Arial, Tahoma, Verdana, sans-serif;
+	font-size: 10px;
+	margin: 0 3px 0 0;
+	text-transform: uppercase;
+	background-position: 100% -312px;
+}
+
+#contentWrap #content ul.tags li:active,
+#contentWrap .button:active {
+	top: 1px;
+	position: relative;
+}
+
+	#contentWrap ul.tags li a {
+		color: #fff;
+		background-position: 0px -286px;
+	}
+
+	#contentWrap ul.tags li:active {
+		position: relative;
+		top: 1px;
+	}
+
+		#contentWrap ul.tags li a span {
+			background-position: left -260px;
+		}
+
+#contentWrap #content ul.tags li a,
+#contentWrap #content .back a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#contentWrap #content ul.tags li:active,
+#contentWrap #content .back:active {
+	top: 1px;
+	position: relative;
+}
+
+#contentWrap #intro {
+	width: 100%;
+	margin: 20px 0;
+	padding: 0 0 16px;
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+	#contentWrap #intro h2 {
+		font-size: 40px;
+		line-height: 44px;
+		margin: 0 0 10px;
+	}
+
+	#contentWrap #intro p {
+		font-style: italic;
+	}
+
+#contentWrap #projects-container {
+	width: 100%;
+	float: left;
+	display: block;
+	overflow: hidden;
+	background: url(http://aaronlademann.com/_images/_template/_portfolio/highlight.png) repeat-y top center;
+}
+
+	#contentWrap #projects {
+		width: 981px;
+		margin: 20px auto 10px auto;
+	}
+
+	#contentWrap #projects ul li {
+		width: 281px;
+		height: 260px;
+		margin: 0 23px;
+		padding: 0 0 50px;
+		float: left;
+		font-size: 13px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		background: url(http://aaronlademann.com/_images/_template/_portfolio/img_bg_280.png) no-repeat 0 0;
+	}
+
+		#contentWrap #projects ul li a {
+			color: #525252;
+			-webkit-transition: all 0.15s ease-in;
+		}
+
+		#contentWrap #projects ul li a:hover {
+			color: #3e9ad4;
+		}
+
+		#contentWrap #projects ul li .img-wrap {
+			width: 270px;
+			height: 218px;
+			margin: 5px 0px 10px 5px;
+			overflow: hidden;
+			float: left;
+			position: relative;
+			opacity: 0.95;
+			cursor: pointer;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			-webkit-transition: opacity 0.15s ease-in;
+		}
+
+		#contentWrap #projects ul li .img-wrap:hover {
+			opacity: 1;
+		}  		 	
+
+			#contentWrap #projects ul li .img-wrap img {
+				display: block;
+				opacity: 1;
+				position: absolute;
+				left: 0%;
+				top: 0%;
+			}
+
+		#contentWrap #projects ul li span.project-title {
+			width: 280px;
+			height: 25px;
+			overflow: hidden;
+			float: left;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		#contentWrap #projects ul li span.project-title * { display: none; }
+		#contentWrap #projects ul li span.project-title .h1 { 
+			display: block; 
+			font-size: 14px; 
+			color: inherit;
+			letter-spacing: normal;
+			line-height: normal;
+			margin: 0;
+		}
+
+#contentWrap .img-wrap-360 {
+	width: 350px;
+	height: 218px;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 10px;
+	padding: 5px 6px 14px;
+	opacity: 0.95;
+	background: url(http://aaronlademann.com/_images/_template/_portfolio/img_bg_360.png) no-repeat 0 0;
+	-webkit-transition: opacity 0.2s ease-in;
+}
+
+#contentWrap #banner {
+	width: 100%;
+	clear: both;
+	float: left;
+}
+
+#contentWrap .img-wrap-fullsize {
+	margin: 0 0 35px;
+	float: left;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	border-bottom: 1px solid #838383;
+	-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+	#contentWrap .img-wrap-fullsize img {
+		padding: 5px;
+		display: block;
+		background: #fff;
+	}
+	
+	.right-column .thumbnail {
+		padding: 5px;
+		display: block;
+		background: #fff;
+		border-left: 1px solid #bebebe;
+		border-right: 1px solid #bebebe;
+		border-bottom: 1px solid #838383;
+		-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+#contentWrap #tag-header {
+	margin: 0 0 30px 0;
+text-transform: uppercase;
+}
+#contentWrap #tag-header h2 { position: relative; top: 10px; }
+
+
+#contentWrap #content {
+	width: 100%;
+	margin: 10px 0 80px 0;
+	padding: 0 0 16px;
+	display: block;
+height: auto;
+float: left;
+}
+
+#contentWrap #content p {
+	line-height: 22px;
+}
+
+#contentWrap #content h1, #contentWrap #content .h1 {
+	margin: 0 0 15px;
+	line-height: 32px;
+}
+
+#contentWrap h1#page-title, #contentWrap .h1#page-title {
+	text-transform: uppercase;
+}
+
+#contentWrap #footer2 {
+	width: 900px;
+	padding: 20px 20px 40px 20px;
+position: absolute;
+	background: url(http://aaronlademann.com/_images/_template/_portfolio/hr.gif) repeat-x top left;
+}
+
+#contentWrap #footer2 h2, #contentWrap #footer .h2 {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#contentWrap .hr {
+	width: 100%;
+	height: 7px;
+	margin: 0 0 10px;
+	display: block;
+	float: left;
+	background: url(http://aaronlademann.com/_images/_template/_portfolio/hr_4px.png) no-repeat 0 0;
+}
+
+#contentWrap .hr hr {
+	display: none;
+}
+
+#contentWrap .right {
+	float: right;
+}
+
+#contentWrap .left {
+	float: left;
+}
+
+		#contentWrap #pagination { 
+		   float: right;
+margin-bottom: 8px;
+}

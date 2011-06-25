@@ -1,0 +1,371 @@
+/*------------------------------------------------------- DYNAMIC WIDTH */
+.galleryPage #comment { display: block !important; }
+div#toolbar { position: absolute; right: 2em; }
+.searchResults #header, .searchResults #content, .shareHomepage #content, .datePage #header, .datePage #content, .keywordPage #header, .keywordPage #content, .shareHomepage #header, .Original #singleImage, .Large #singleImage, .Medium #singleImage, .Small #singleImage, #traditional, #traditional #photos, #category, #homepage, .singleImage #header, .traditional #header, .category #header, .homepage #header, .homepage #footer, .homepage #feeds, .tempClass #header { width: auto; padding-left: 3em; padding-right: 3em; }
+#header_wrapper #header { padding-left: 0 !important; padding-right: 0 !important; }
+#header { color: #aaa; }
+#bodyWrapper { padding-bottom: 6em !important; } /* make room for the fixed pos. footer */
+
+#bodyWrapper img.imgBorder { border-color: #000; }
+#bodyWrapper img.imgBorder.imgBorderSuccess, #bodyWrapper .galleryPage img.imgBorder { border: 1px solid #999; }
+#bodyWrapper .galleryPage img.imgBorder#mainImage, #bodyWrapper .galleryPage #mainImageLink:hover, #bodyWrapper .galleryPage #mainImageLink:hover img.imgBorder  { border: 0 none !important; }
+
+/*------------------------------------------------------- customize search results */
+.searchResults #otherSearches, .searchResults #keywordResults, .searchResults #galleryResults { display: none; }
+.box .pageNav { border: 0 none !important; }
+
+/*------------------------------------------------------- customize album thumbnails and containing boxes */
+.box, .boxBottom, .boxTop {
+	border: 0 none !important; 
+	border-top: 0 none !important; 
+	border-bottom: 0 none !important; 
+	/*background-color: transparent !important;*/
+        background-image: none !important;
+        background-color: rgba(0,0,0,0.2) !important;
+				*background-color: black !important;
+}
+.box, .albumNav, #custom_footer .inner {    
+        border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        border: 3px solid rgba(0,0,0,0.8) !important;
+				*border: 3px solid black !important;
+}
+.boxBottom, .boxTop {
+    padding: 0 2em;
+}
+.boxTop, .albumNav, #custom_footer .inner, .box .pageNav {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    background-color: rgba(0,0,0,0.8) !important;
+		*background-color: black;
+}
+.boxBottom { padding-top: 1.4em; }
+.miniBox, .loggedIn #browseCategories .miniBox,
+.boxBottom .albumLarge {
+	
+}
+/* need these dimensions so that even before the loading of the thumbnails occur, the layout grid is set. */
+.miniBox { margin-bottom: 1.4em !important; }
+.miniBox, .miniBox .photo { 
+    margin-bottom: 0; 
+    min-height: 104px;
+    height: 104px;
+    min-width: 104px;
+}
+.miniBox .photoLarge, .boxBottom .albumLarge {
+		margin-bottom: 0;
+		min-height: 154px;
+		height: 154px;
+		min-width: 154px;
+}
+/* make a more graceful entrance for the thumbnails that smugmug FAILS at... */
+.miniBox .photo, .miniBox .photoLarge, 
+#thumbnails .photo div { 
+    background: Black url('http://aaronlademann.com/_images/_template/ajax-loader_green-transBlk.gif') 50% 50% no-repeat;
+}
+#ajaxPhotoBox #mainImage, #lightBoxImage { background: Black url('http://aaronlademann.com/_images/_template/ajax-loader_lg_green-transBlk.gif') 50% 50% no-repeat !important; }
+#ajaxPhotoBox #mainImageLink:hover #mainImage { background-color: #777 !important; }
+#quickShare, .notLoggedIn #photoBy { display: none !important; }
+.emptyalbum_ti { background: transparent url('http://aaronlademann.com/_images/_template/photos_thumbnail-coming-soon_100x100.png') no-repeat !important; }
+/*.miniBox .photo a img, .miniBox .photoLarge a img { opacity: .8; filter: alpha(opacity=80); *zoom: 1; }
+.miniBox .photo a:hover img, .miniBox .photoLarge a:hover img { opacity: 1.0; filter: alpha(opacity=100); *zoom: 1; }*/
+
+.boxBottom .miniBox {
+    min-width: 244px !important;
+		max-width: 355px !important;
+    width: 244px !important;
+    overflow: visible;
+    position: relative;
+}
+#subcategoriesBox .boxBottom .miniBox, #categoriesBox .boxBottom .miniBox { min-width: 200px !important; width: 200px !important; }
+.boxBottom .miniBox.albumLarge { width: 355px !important; }
+
+/*------------------------------------------------------- customize logged in styles (to make UI better for me) */
+.loggedIn .miniBox { height: auto !important; }
+.loggedIn .miniBox .description, .loggedIn .miniBox .description a, .loggedIn .miniBox .note {
+    font-size: 10px;
+    color: #777;
+    border-bottom: 0 none !important;
+}
+.loggedIn .miniBox .description a:hover, .loggedIn .miniBox .note:hover {
+    color: #a0e22e;
+} 
+.loggedIn .miniBox .updated {
+    display: none;
+}
+	/* settings button */	
+	.loggedIn .miniBox .photo .yui-button, .loggedIn .miniBox .photoLarge .yui-button {
+	    position: absolute;
+            left: 106px;
+            top: 85px;
+	}
+	.loggedIn .miniBox .photoLarge .yui-button {
+		left: 156px;
+		top: 134px;
+	}
+
+
+/*------------------------------------------------------- customize home page gallery */
+#slideshowBox, #slideshowBox .boxBottom {
+    background: transparent !important;
+    border: 0 none !important;
+}
+#slideshowBox { margin: 1.5em 0 4em 0; }
+#slideshowBox, #slideshowBox .boxBottom, #slideshowBox .boxTop { border: 0 none !important; border-top: 0 none !important; border-bottom: 0 none !important; }
+.smuglogo { width: auto !important; background-image: none !important; }
+
+/*------------------------------------------------------- top and bottom (footer) navigation boxes */
+.albumNav, #custom_footer .inner { 
+  background-color: rgba(0,0,0,0.6) !important;
+	*background-color: black !important;
+	border: 1px solid rgba(0,0,0,0.8) !important;
+	*border: 1px solid black !important; 
+}
+/* customize album navigation (top) */
+.albumNav { 
+	border-top: 0 none !important; 
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	-moz-border-radius-topleft: 0 !important;
+	-moz-border-radius-topright: 0 !important;
+	margin-bottom: 20px;
+}
+
+/* customize footer (bottom) */
+#cobrand_footer { display: none !important; }
+#custom_footer {
+	position: fixed;
+	bottom: 0;
+	width: 100% !important;
+	padding: 0;
+	font-size: 11px;
+	color: #555;
+}
+#custom_footer .inner { 
+	background-color: rgba(35,35,35,0.9) !important;
+	*background-color #232323 !important: 
+	float: left;
+	height: auto;
+	padding: 10px 1% !important;
+  width: 98%;
+	margin-bottom: 0; 		
+	border: 0 none !important; 
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+}
+#custom_footer a { 
+  color: #666;
+}
+#custom_footer a:hover {
+	color: #a0e22e;
+	text-decoration: none;
+	border: 0 none !important;
+}
+
+/*------------------------------------------------------- IMAGE REPLACED H1 */
+#header h1, #header h1 a { width: 292px !important; height: 37px !important; }
+#header h1 { margin: 0 !important; padding: 0 !important; line-height: normal; float: left; }
+#header h1 a {
+text-indent: -999em !important;
+text-decoration: none !important;
+display: block;
+background: transparent url('http://aaronlademann.com/_images/_template/header-photos.aaronlademann.com.png') left bottom no-repeat;
+position: relative;
+bottom: -9px;
+left: 2em;
+}
+.galleryPage #header h1 a { left: .5em; }
+
+/*------------------------------------------------------- HIDE H3 */
+h3.title, #breadCrumbTrail .title { color: #a0e22e; font-weight: bold; }
+h3.title, #footerLogin { visibility: hidden; }
+
+/*------------------------------------------------------- HIDE HOMEPAGE BREADCRUMBS */
+#homepage #breadcrumb, #cobrand_footer #footer span { display: none !important; visibility: hidden !important; }
+#custom_footer a, #custom_footer .nav, #custom_footer div, #custom_footer span, #custom_footer * { font-size: 11px !important; }
+
+/*------------------------------------------------------- MISC COLORS and FONT STYLINGS */
+#bodyWrapper a { text-decoration: none !important; }
+#bodyWrapper a, #bodyWrapper a:active, #bodyWrapper a:visited { border-bottom: 1px dotted White; }
+#bodyWrapper a:hover { border-bottom: 1px solid White; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.albumTitle a, .photo a, .photoLarge a, .img a, #lightBoxPhoto a, 
+.pageOn, #pageNavigation_top a, #photoNavTop a, #custom_footer a, .yui-button a,
+#breadCrumbTrail a { border-bottom: 0 none !important; }
+
+.pageOn, #pageNavigation_top a, #photoNavTop a, .albumTitle a:hover,
+.yui-button #buyButton-button { color: #a0e22e; font-weight: bold; }
+
+#breadCrumbTrail { color: #999; }
+#breadCrumbTrail a { color: White; }
+#breadCrumbTrail a:hover { color: #a0e22e; }
+
+.pageOn, #pageNavigation_top a:hover, #photoNavTop a:hover { text-decoration: underline !important; }
+
+#photoNavTop { text-align: center; }
+#photoKeywords .title { color: #666; font-size: 11px !important; }
+#photoKeywords a, #photoKeywords .keyword { border-bottom: 0 none !important; color: #ccc !important; font-size: 11px !important; display: inline-block; padding: 1px 3px; }
+#photoKeywords a:hover, #photoKeywords .keyword:hover, #custom_footer a:hover, .yui-button span button:hover, .yui-button span button:focus { color: #a0e22e !important; }
+/*#photoKeywords a::outside::before { content: '[ '; }
+#photoKeywords a::outside::after { content: ' ] '; }*/
+
+
+/*------------------------------------------------------- menu::base */
+div#menu a, #searchWords { font: normal 12px Trebuchet MS; }
+div#menu a.big { font-size: 16px; font-weight: bold !important; }
+div#menu {
+    float: left;
+    margin-top: -28px;
+    height:41px;
+    background: transparent url(http://aaronlademann.com/_includes/_nav/images/main-bg.png) left top repeat-x;
+}
+/*------------------------------------------------------- Firefox */
+@-moz-document url-prefix()
+{
+div#menu { margin-top: -8px; }
+}
+/*------------------------------------------------------- search */
+#menu #searchBox {
+    margin-left: 10px;
+    padding-right: 16px;
+    position: relative;
+    top: 8px;
+}
+#menu #searchBox #searchWords {  
+    padding-left: 6px;
+    background-color: #759832;
+    border: 0 none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-bottom: 1px solid #9bca42;
+    border-right: 1px solid #9bca42;
+    border-top: 1px solid #698c27;
+    border-left: 1px solid #698c27;
+}
+/*------------------------------------------------------- navigation */
+div#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+div#menu ul.menu {
+    padding-left: 11px;
+}
+
+div#menu li {
+    position: relative;
+    z-index: 9;
+    margin: 0;
+    padding: 0 5px 0 0;
+    display: block;
+    float: left;
+}
+div#menu li:hover>ul {
+    left: -2px;
+}
+
+div#menu a {
+    position: relative;
+    z-index: 10;
+    height: 41px;
+    display: block;
+    float: left;
+    line-height: 41px;
+    text-decoration: none;
+    border-bottom: 0 !important;
+}
+div#menu a:hover, div#menu a:hover span { color: #fff; }
+div#menu li.current a {}
+
+div#menu span {
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+}
+div#menu ul ul a.parent span {
+    background-position:95% 8px;
+    background-image: url(http://aaronlademann.com/_includes/_nav/images/item-pointer.gif);
+}
+div#menu ul ul a.parent:hover span {
+    background-image: url(http://aaronlademann.com/_includes/_nav/images/item-pointer-mover.gif);
+}
+
+/* menu::level1 */
+div#menu a {
+    padding: 0 10px 0 10px;
+    line-height: 30px;
+    color: #e5e5e5;
+}
+div#menu a.big { padding: 0 25px 0 25px; }
+div#menu span {
+    margin-top: 5px;
+}/**@replace#1*/
+div#menu li { background: url(http://aaronlademann.com/_includes/_nav/images/main-delimiter.png) 98% 4px no-repeat; }
+div#menu li.last { background: none; }
+
+/* menu::level2 */
+div#menu ul ul li { background: none; }
+div#menu ul ul {
+    position: absolute;
+    top: 38px;
+    left: -999em;
+    width: 163px;
+    padding: 5px 0 0 0;
+    background: rgb(45,45,45);
+    margin-top:1px;
+}
+div#menu ul ul a {
+    padding: 0 0 0 15px;
+    height: auto;
+    float: none;
+    display: block;
+    line-height: 24px;
+    color: rgb(169,169,169);
+}
+div#menu ul ul span {
+    margin-top: 0;
+    padding-right: 15px;
+    _padding-right: 20px;
+    color: rgb(169,169,169);
+}
+div#menu ul ul a:hover span {
+    color: #fff;
+}
+div#menu ul ul li.last { background: none; }
+div#menu ul ul li {
+    width: 100%;
+}
+
+/* menu::level3 */
+div#menu ul ul ul {
+    padding: 0;
+    margin: -38px 0 0 163px !important;
+    margin-left:172px;
+}
+
+/* colors */
+div#menu ul ul ul { background: rgb(41,41,41); }
+div#menu ul ul ul ul { background: rgb(38,38,38); }
+div#menu ul ul ul ul { background: rgb(35,35,35); }
+
+/* lava lamp */
+div#menu li.back {
+    background: url(http://aaronlademann.com/_includes/_nav/images/lava.png) no-repeat right -44px !important;
+    background-image: url(http://aaronlademann.com/_includes/_nav/images/lava.gif);
+    width: 13px;
+    height: 44px;
+    z-index: 8;
+    position: absolute;
+    margin: -1px 0 0 -5px;
+}
+div#menu li.back .left {
+    background: url(http://aaronlademann.com/_includes/_nav/images/lava.png) no-repeat top left !important;
+    background-image: url(http://aaronlademann.com/_includes/_nav/images/lava.gif);
+    height: 44px;
+    margin-right: 8px;
+}
+
+/* END DROP-DOWN NAV STYLES */

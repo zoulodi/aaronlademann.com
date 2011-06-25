@@ -1,0 +1,109 @@
+/* CSS Document */
+
+body {
+	margin:0;
+	background:#465c62 url(../images/home_bg.gif) top left repeat-x;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#8d8e8e;
+	font-variant:small-caps;
+	font-size:.8em;
+}
+/* IMAGE REPLACEMENT CLASS "IMR" FOR USABILITY WITH CSS DISABLED */
+div.imr, span.imr {display:none;}
+
+#home-wrapper {
+	float:left;
+	width:800px;
+}
+#home-main {
+	float:left;
+	width:521px;
+	height:335px;
+	background:url(../images/home-main.jpg) top left no-repeat;
+}
+#home-nav_wrap {
+	float:left;
+	width:279px;
+	height:335px;
+	padding-top:131px;
+	/* BOX MODEL HACK */
+		voice-family: "\"}\""; 
+  		voice-family:inherit;
+  		height:204px;
+}
+#home-nav_wrap a {
+	float:left;
+	display:block;
+	width:93px;
+	height:180px;
+	background-position:bottom;
+}
+* html #home-nav_wrap a {
+	margin-left:-1px;
+}
+#home-nav_wrap a:hover {background-position:top;}
+.nav_aboutme {background:url(../images/nav-aboutme.gif) no-repeat;}
+.nav_resume {background:url(../images/nav-resume.gif) bottom left no-repeat;}
+.nav_portfolio {background:url(../images/nav-portfolio.gif) bottom left no-repeat;}
+
+
+/* END MAIN */
+/* BEGIN BELOW MAIN */
+#home-belowmain {
+	float:left;
+	width:800px;
+	min-height:103px;
+	background:url(../images/home-belowmain.jpg) top left no-repeat;
+}
+/* IE MIN-HEIGHT FIX */
+* html #home-belowmain {height:103px;}
+#home-belowmain p {
+	font-variant: normal;
+	color: #AFAFAF;
+}
+#home-belowmain p a { line-height: normal; }
+
+#emailme a {
+	float:right;
+	line-height:30px;
+	margin-right:30px;
+	text-align:right;
+	color:#d1d3d3;
+	text-decoration:none;
+}
+
+#emailme a:hover {
+	text-decoration:underline;
+	color:#00aad8;
+}
+
+#valid {
+	float:left;
+	width:auto;
+	margin:0px 0px 0px 125px;
+}
+* html #valid {
+	margin:0px 0px 0px 63px;
+}
+#valid a, #content a {
+	line-height:30px;
+	color:#d1d3d3;
+	text-decoration:none;
+}
+#valid a:hover, #content a {
+	text-decoration:underline;
+	color:#00aad8;
+}
+hr {
+	color:#00aad8;
+	background:#00aad8;
+	border:none;
+	height:1px;
+	font-size:0px;
+	line-height:0px;
+	padding:0;
+	margin:0;
+}
+* html hr {
+	margin-top:-14px;
+}

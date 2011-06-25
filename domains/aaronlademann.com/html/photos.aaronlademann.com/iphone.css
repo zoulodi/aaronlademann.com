@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+#custom_footer, #toolbar, #slideshowBox { display: none !important; }
+#header h1 a { left: 10px; }
+
+.searchResults #header, .searchResults #content, .shareHomepage #content, .datePage #header, .datePage #content, .keywordPage #header, .keywordPage #content, .shareHomepage #header, .Original #singleImage, .Large #singleImage, .Medium #singleImage, .Small #singleImage, #traditional, #traditional #photos, #category, #homepage, .singleImage #header, .traditional #header, .category #header, .homepage #header, .homepage #footer, .homepage #feeds, .tempClass #header { width: auto; padding-left: .5em; padding-right: .5em; }
+
+.boxBottom, .boxTop { padding: 0 1em; }
+.boxTop { 
+	padding-top: .4em;
+  padding-bottom: .9em;
+}
+.boxBottom { padding-top: .5em; }

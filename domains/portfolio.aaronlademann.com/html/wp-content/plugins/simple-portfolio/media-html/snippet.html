@@ -1,0 +1,12 @@
+<span class="single-media-item">
+	<span class="title">{title} <a class="button" onclick="delete_media(this);">Delete</a></span>
+	<span class="container">
+		<input type="button" class="tagadd" value="Show" snippet_id="html_in_snippet_{index}" id="show_hide_button" onclick="toggle_snippet_html(this)" />
+		<span class="html-in-snippet" id="html_in_snippet_{index}" state="hidden"><pre>{value}</pre></span>
+		
+		<span class="item-data">
+			<input type="hidden" name="portfolio_media_type_{index}" id="portfolio_media_type_{index}" value="snippet" />
+			<textarea name="portfolio_media_value_{index}">{value}</textarea>
+		</span>
+	<span>
+</span>

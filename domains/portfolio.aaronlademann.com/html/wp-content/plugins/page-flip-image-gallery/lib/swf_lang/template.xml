@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <PAGE_SETTINGS 			value=""/>
+    <LOADING_IMAGES 		value=""/>
+	<DEFAULT_SETTINGS		value=""/>
+	<IMAGE_SETTINGS			value=""/>
+	<FIRST_PAGE_HELP		value=""/>
+	<MY_PAGES				value=""/>
+	<MY_IMAGES				value=""/>
+	<EXIT_WITHOUT_SAVING	value=""/>
+	<EXIT_AND_SAVE			value=""/>
+	<USED_IMAGES_ONLY		value=""/>
+	<DEFAULT_PAGE_SETTINGS	value=""/>
+	<FRAME_COLOR			value=""/>
+	<FRAME_SIZE				value=""/>
+	<SELECT_A_TEMPLATE		value=""/>
+	<USE_DEFAULT_SETTINGS	value=""/>
+	<REMOVE_IMAGE			value=""/>
+	<EDIT_DESCRIPTION		value=""/>
+	<SCALE_TYPE				value=""/>
+	<SCALE_TO_FILL			value=""/>
+	<SCALE_TO_FIT			value=""/>
+	<DO_NOT_SCALE			value=""/>
+	<X_OFFSET				value=""/>
+	<Y_OFFSET				value=""/>
+	<APPLY_TO_ALL_PAGE		value=""/>
+	<DESCRIPTION_SAVE		value=""/>
+	<DESCRIPTION_CANCEL		value=""/>
+	<PAGE_N					value=""/>
+</data>

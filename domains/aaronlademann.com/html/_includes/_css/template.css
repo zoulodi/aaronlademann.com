@@ -1,0 +1,74 @@
+/* TEMPLATE */
+
+/* override gridlocked theme defaults */
+.aafolio #masthead { background: #fff url("/_images/_template/body-bg.gif") left top repeat-x !important; z-index: 2; }
+.aafolio #wpadminbar { display: none; }
+.entry-meta ul, .entry-meta ul ul, .entry-meta ul ul ul, .entry-meta ul ul ul ul, .entry-meta ul ul ul ul ul { clear: left; }
+.widget-title { margin: 10px 0 4px 0; font-weight: bold; }
+.widget-title.first { margin-top: 0; }
+.contactform #submit:hover span.icon,
+.comment-body p a:hover,
+#submit:hover span.icon,
+.single-page-navigation a:hover,
+#back-to-top a:hover .icon,
+.entry-content a:hover,
+#overlay-inner a:hover,
+.current-cat a,
+.current-page a,
+.current-menu-item a { background-color: #ffedac; }
+
+a { color: #08c; }
+.link { cursor: pointer !important; }
+a,input { outline: 0 none !important; }
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover, .link:hover { text-decoration: underline; color: #09f; }
+
+#masthead, #contentWrap, #footer { min-width: 990px; }
+#masthead, #masthead #mastlogo, #footer { position: absolute; left: 0; width: 100%; }
+#masthead, #topNav, #topNav ul, #topNav li, #topNav li a { top: 0; height: 80px; }
+#masthead #mastlogo { width: 294px; height: 52px; left: 25px; top: 15px; margin-right: 100px; }
+#masthead #mastlogo img { width: auto; height: auto; text-decoration: none !important; outline: 0 !important; border: 0 !important; }
+#masthead h1, #masthead h2, #masthead .h1, #masthead .h2, #masthead .heading { position: absolute; top: -999em; text-indent: -999em; }
+#footer {
+	bottom: 0;
+	height: 35px;
+	background: #27272f url("/_images/_template/footer-aaronlademann.com-left.png") left bottom no-repeat; 
+    font-size: 11px;
+	position: fixed;
+	z-index:900;
+}
+#footer #copyright { color: #5b5b5b; display: block; height: auto; width: auto; text-align: right; position: relative; float: left; left: 220px; top: 12px; }
+.aafolio #footer #copyright { top: 8px; }
+/* top and bottom nav (global nav attr) */
+.nav ul, .nav li, .nav li a { width: auto; }
+.nav ul, .nav li { margin: 0; padding: 0; list-style-type: none; list-style-image: none; border: 0; outline: 0; }
+.nav ul { overflow: hidden; float: right; }
+.nav li { float: left; }
+.nav li a { display: block; color: #949494; text-transform: uppercase; }
+.nav li a:hover, .nav .current_page_item, .nav .current-menu-item a, .nav .active a, .nav .menu-item-home { color: #fff !important; text-decoration: none; background-color: #171920 !important; }
+/* topNav */
+#topNav { position: absolute; width: auto; *width: 346px; top: 0; right: 25px; background: Transparent url("/_images/_template/topNav-active.png") right top repeat-x; }
+#topNav .active, #topNav .current_page_item, #topNav .menu-item-home { background: Transparent url("/_images/_template/topNav-arrow.gif") center bottom no-repeat; }
+#topNav li a { 
+	padding: 0 20px;
+	line-height: 80px;
+	text-transform: uppercase;
+	background: Transparent url("/_images/_template/body-bg.gif") left top repeat-x; 
+}
+#topNav li a:hover, #topNav li:hover, #topNav .current_page_item a, #topNav .active a, .nav .menu-item-home a { background-image: none !important; background-color: Transparent !important; } /* reveal the hover image which is contained in #topNav */
+/* footernav */
+#footerNav {
+position: absolute;
+right: 25px;
+bottom: 0;
+width: auto;
+height: 35px;
+}
+#footerNav a { display: block; height: 25px; width: auto; padding: 7px 15px 3px 15px; }
+.aafolio #footerNav { right: 100px; }
+
+/* SUBNAV */
+
+#topNav .subnav a { line-height: 30px; padding: 0 20px; background: 0 none; }
+#topNav .subnav a:hover, #topNav .subnav .current-menu-item, #topNav .subnav .current-menu-item a { color: #08c !important; }
+#topNav .subnav ul, #topNav .subnav li, #topNav .subnav ul li a { height: auto; }

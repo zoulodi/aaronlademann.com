@@ -1,0 +1,953 @@
+/* Eric Meyer CSS Reset - v1.2 - May 4, 2007
+     Don't forget to set a foreground and background colour on the 'html' or 'body' element! */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; padding: 0; outline: 0; vertical-align: baseline;}
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+body {background: white; color: black; line-height: 1;}
+/*ol, ul {list-style: none;}*/
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate; border-spacing: 0;}
+
+caption, th, td {font-weight: normal; text-align: left;}
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+/* @end */
+
+html {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;}
+
+body {
+    background: #f0f2f2 url(http://assets.ligatureloopandstem.com/img/wall.png) 0 0 repeat;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+body,
+input,
+textarea {
+    color: #7a7a7a;
+    font-family: "skolar-1","skolar-2", "Garamond Premier Pro", Palatino, Georgia, serif;
+    font-size: 14px;
+    line-height: 21px; /* 21/16 = 3.125 */
+}
+
+input {line-height: 14px;}
+
+a {
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+}
+
+a:link, 
+a:visited {
+    color: #b32b2b;
+}
+a:hover {color: #727272;}
+a:active {color: #376060;}
+
+a[rel="bookmark"]:link, 
+a[rel="bookmark"]:visited {
+    color: rgba(122,122,122,.75);
+}
+
+a[rel="bookmark"]:hover, 
+a[rel="bookmark"]:active {
+    color: #b32b2b;
+}
+
+footer ul {font-size: 14px;}
+
+img {border: 0;}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 21px;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {font-size: 60px;}
+h2 {color: #5b5b5b; font-size: 24px; margin-bottom: 21px;}
+h3 {color: #5f5f5f; font-size: 18px;}
+h4 {color: #b32b2b; font-size: 18px;}
+h5 {font-size: 12px;}
+h6 {font-size: 12px;}
+
+h1, h2, .edition-info {font-family: "bree-1","bree-2", "Garamond Premier Pro", Palatino, Georgia, serif;}
+
+h1 {
+    color: #b32b2b;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: -2px;
+    line-height: 63px;
+    margin-bottom: 21px;
+}
+
+h1+p {margin-bottom: 21px;}
+#product-page h1 {margin-bottom: 42px;}
+#product-page h2 {margin-bottom: 0;}
+
+h2 abbr[title="and"] {font-style: normal; font-weight: normal;}
+
+p, ul, ol, dd, blockquote, pre {margin-bottom: 21px;}
+em {font-style: italic;}
+strong {font-weight: bold;}
+
+ul {
+    list-style-type: none;
+}
+
+th, td {
+    font-size: 14px;
+    text-align: right;
+}
+
+#cart-table {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/divider.gif) 0 100% repeat-x;
+    padding-bottom: 21px;
+}
+
+#cart-head th {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#cart-head #head-item,
+#cart-body th {
+    text-align: left;
+}
+
+.cart-update,
+.cart-shipping, 
+.cart-options {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/divider.gif) 0 100% repeat-x;
+    padding-top: 10px;
+}
+
+.cart-options {background-position: 0 0;}
+
+.cart-options p {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/credit_cards.gif) 0 50% no-repeat;
+    padding: 10px 0;
+}
+
+#cart-footer .one {padding-left: 25px;}
+#cart-footer p {
+    overflow: hidden;
+    margin: 0;
+}
+
+#cart-footer * {text-align: right;}
+
+.col {display: block; float: left;}
+
+.cart-shipping,
+.cart-discount,
+.cart-update, 
+.cart-total {
+    background-color: rgba(255,255,255,.25);
+}
+
+.cart-shipping, 
+.cart-discount, 
+.cart-update, 
+.cart-total {padding: 10px 0;}
+
+.cart-shipping label {display: inline; /*margin-right: 9px;*/}
+.cart-shipping select {
+    margin-right: 10px;
+    width: 135px;
+}
+
+#cart_discount_code {
+    margin-right: 10px;
+    width: 129px;
+}
+
+.cart-update .button,
+.cart-options .button {
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+th.one,
+td.one,
+td.two,
+#cart-footer span.two {
+    padding-left: 25px;
+}
+
+#cart-footer span.total-discount, 
+#cart-footer span.total-price {
+    margin-right: 10px;
+    width: 135px;
+}
+
+.remove-btn {margin-left: 9px;}
+.remove-btn,
+.remove-btn img {
+    line-height: 1;
+    vertical-align: top;
+}
+
+#logo {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/logo-states.png) 0 -84px no-repeat;
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: -84px;
+}
+
+#logo img {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+}
+
+a:link #logo img, 
+a:visited #logo img {
+    opacity: 1;
+}
+
+a:hover #logo img, 
+a:active #logo img {
+    opacity: 0
+}
+
+#content {
+    padding-left: 230px;
+    text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+
+#intro {
+    position: relative;
+}
+
+#content ol {
+    color: #a0a0a0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 42px;
+    margin-bottom: 42px;
+}
+
+#content li span {
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+dt {font-weight: bold;}
+
+dfn {
+    font-style: italic;
+    margin-right: 6px;
+}
+
+.phonetics {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-right: 25px;
+}
+.phonetics+.phonetics {margin-left: 60px;}
+
+.type {
+    color: rgba(122,122,122,.75);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+abbr[title="and"] {
+    font-family: inherit;
+    font-style: italic;
+}
+
+#frame {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/wall-edge.png) 0 0 repeat-x;
+    margin: 0;
+    /*overflow: hidden;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#drywall {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/wall-lights.png) 50% 0 no-repeat;
+    padding-top: 168px;
+    text-align: left;
+}
+
+#home-page #drywall {
+    background-position: 995px 0;
+}
+
+.scroll {
+    overflow: auto;
+    position: relative;
+    clear: left;
+}
+
+.scroll-container {overflow: hidden;}
+
+/* @group Navigation */
+#products-nav {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/tip.png) 50% 0 no-repeat;
+    padding: 9px 0 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#products-nav ul {margin: 0; text-align: center;}
+
+#products-nav li {
+    display: -moz-inline-box;
+    display: inline-block;
+}
+
+#products-nav a {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/pagination.gif) 50% 0 no-repeat;
+    display: block;
+    height: 12px;
+    line-height: 1;
+    width: 12px;
+    text-indent: -9999em;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-duration: 0;
+    -moz-transition-duration: 0;
+}
+
+#products-nav a:link, #products-nav a:visited {background-position: 50% 0;}
+#products-nav a:hover {background-position: 50% -40px;}
+#products-nav a:active {background-position: 50% -20px;}
+
+#products-nav a.selected {background-position: 50% -20px;}
+
+.scroll-buttons {
+    position: absolute;
+    text-indent: -9999em;
+    top: 9px;
+    z-index: 2;
+}
+
+.scroll-buttons a {
+    display: block;
+    height: 16px;
+    width: 16px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-duration: 0;
+    -moz-transition-duration: 0;
+}
+
+.right-button {right: 20px;}
+.right-button a {background: transparent url(http://assets.ligatureloopandstem.com/img/pagination.gif) 50% -60px no-repeat;}
+.right-button a:link, 
+.right-button a:visited {background-position: 50% -60px;}
+.right-button a:hover {background-position: 50% -108px;}
+.right-button a:active {background-position: 50% -84px;}
+
+.left-button {left: 20px;}
+.left-button a {background: transparent url(http://assets.ligatureloopandstem.com/img/pagination.gif) 50% -132px no-repeat;}
+.left-button a:link, 
+.left-button a:visited {background-position: 50% -132px;}
+.left-button a:hover {background-position: 50% -180px;}
+.left-button a:active {background-position: 50% -156px;}
+/* @end */
+
+/* @group Minicart */
+#minicart {
+    background: #56575d url(http://assets.ligatureloopandstem.com/img/minicart.png) 0 100% repeat-x;
+    color: rgba(255,255,255,.75);
+    min-height: 42px;
+    position: relative;
+}
+
+#minicart a:link,
+#minicart a:visited {
+    color: rgba(255,255,255,.75);
+}
+
+#minicart a:hover,
+#minicart a:active {
+    color: rgba(255,255,255,1);
+}
+
+#minicart h4 {display: none;}
+
+#minicart ul {
+    float: left;
+    margin: 0;
+    overflow: hidden;
+}
+
+#minicart li {
+    float: left;
+    margin: 10px 0 9px 0;
+    vertical-align: middle;
+}
+
+#minicart li.minicart-items {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/cart.gif) 0 49% no-repeat;
+    margin: 10px 12px 9px 25px;
+    padding-left: 16px;
+}
+.minicart-total {}
+.minicart-view {padding-right: 8px;}
+.minicart-checkout {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/or.gif) 0 50% no-repeat;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 30px;
+}
+
+#minicart ul.minicart-options {
+    float: right;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+#minicart ul.minicart-options li {
+    margin-top: 11px;
+}
+
+.minicart-total {
+    font-size: 21px;
+}
+/* @end */
+
+/* @group Panel Sizes */
+.one {width: 60px;}
+.two {width: 145px;}
+.three {width: 230px;}
+.four {width: 315px;}
+.five {width: 400px;}
+.six {width: 485px;}
+.seven {width: 570px;}
+.sevenpointfive {width: 600px;}
+.eight {width: 655px;}
+.nine {width: 740px;}
+.ninepointfive {width: 800px;}
+.ten {width: 825px;}
+
+.left {
+    float: left;
+    margin-right: 25px;
+}
+
+.right {
+    float: right;
+    margin-left: 25px;
+}
+
+.short {
+    min-height: 420px;
+    margin-top: 42px;
+}
+
+.last {margin-left: 0; margin-right: 0;}
+
+.tall {min-height: 630px;}
+.mid-tall, .extra-tall {min-height: 735px;}
+
+#product-page .short {margin-top: 0;}
+/* @end */
+
+/* @group Pages */
+#main > p:first-child:first-letter {
+    color: #b32b2b;
+    float: left;
+    font-size: 47px;
+    line-height: 1;
+    margin: 0 0 -21px 0;
+    margin: 0 0 -9px 0;
+    padding: 0 4px 0 0;
+    text-transform: capitalize;
+}
+
+aside {
+    color: rgba(122,122,122,.75);
+    /*font-size: 12px;*/
+}
+/* @end */
+
+/* @group Products */
+.product {
+    background: #f0f2f2;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.product a {display: block;}
+
+.product img {
+    vertical-align: middle;
+    -webkit-box-shadow: rgba(0,0,0,.4) -10px 8px 50px;
+    -moz-box-shadow: rgba(0,0,0,.3) -10px 8px 50px;
+    -o-box-shadow: rgba(0,0,0,.4) -10px 8px 50px;
+    box-shadow: rgba(0,0,0,.4) -10px 8px 50px;
+}
+
+.product-info {position: relative;}
+
+.product-info h3 {
+    display: inline;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.product-info h3 sup {font-size: 18px;}
+
+.product-info h3 em {
+    color: rgba(122,122,122,.75);
+    font-weight: normal;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.product-description {float: left; overflow: hidden; width: 100%;}
+
+.reset {
+    background: rgba(122,122,122,.5);
+    color: #fff;
+    cursor: pointer;
+    display: -moz-inline-box;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1.75;
+    padding: 2px 9px 0 9px;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    -webkit-border-radius: 14px;
+    -webkit-transition-duration: .7s;
+    -moz-border-radius: 14px;
+    -moz-transition-duration: .7s;
+    -o-border-radius: 14px;
+    -o-transition-duration: .7s;
+    border-radius: 14px;
+}
+
+.reset:hover, 
+.reset:active {
+    background: #b32b2b;
+}
+
+#product_2695321, #product_863721, #product_558821, #product_558801, #product_2701369, #product_3337224, #product_3955874 {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/ee.png) 0 0 no-repeat;
+    text-align: center;
+}
+
+#product_558801 {background-position: 0 0;} /* buttons */
+#product_2701369 {background-position: -400px 0;} /* wallpapers */
+#product_558821 {background-position: -800px 0;} /* ampersand print */
+#product_863721 {background-position: -1200px 0;} /* test print */
+#product_2695321 {background-position: -1600px 0;} /* lesson plan print */
+#product_3337224 {background-position: -2000px 0;} /* lesson plan f2 print */
+#product_3955874 {background-position: -2000px 0;} /* sogo japan print */
+
+#product_558821 p, 
+#product_863721 p,
+#product_2695321 p,
+#product_3337224 p,
+#product_3955874 p {margin-top: 42px;}
+
+#product_558821 .caption p, 
+#product_863721 .caption p, 
+#product_2695321 .caption p, 
+#product_3337224 .caption p,
+#product_3955874 .caption p {margin-top: 0;}
+
+#product-page .product {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotate(0);
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: default;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transition-property: -webkit-transform;
+
+    -moz-transform: rotate(0);
+    -moz-transform-duration: .3s;
+    -moz-transform-origin: 50% 50%;
+    -moz-transition-property: -moz-transform;
+    
+    -o-transform: rotate(0);
+    -o-transform-duration: .3s;
+    -o-transform-origin: 50% 50%;
+    -o-transition-property: -o-transform;
+}
+
+#product-page .product:hover {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+}
+/* @end */
+
+/* @group Forms */
+fieldset {border: none;}
+legend {display: none;}
+label {
+    font-weight: bold;
+    margin-right: 25px;
+    text-align: right;
+    width: 60px;
+}
+
+.field label {
+    display: -moz-inline-box;
+    display: inline-block;
+}
+
+.field {padding: 7px 0 8px 0;}
+.indicate-required {font-style: italic; margin-bottom: 21px;}
+.note-required {color: #b32b2b;}
+
+input {padding: 0 2px;}
+
+input, 
+textarea {
+    border: 1px solid #aaa;
+    margin: 0;
+}
+
+#cart-body input {width: 90%;}
+
+#contact-form select {font-size: 14px;}
+
+#contact-form label.textarea {vertical-align: top;}
+#contact-form input,
+#contact-form textarea {
+    margin: 0;
+    padding: 4px;
+    width: 302px;
+}
+
+#mc-embedded-subscribe-form fieldset {margin-bottom: 21px;}
+
+#mc-embedded-subscribe-form label {width: 80px;}
+
+#mc-embedded-subscribe-form input {
+    margin: 0;
+    padding: 4px;
+    width: 262px;
+}
+
+.mce_inline_error {
+    background: #fff8d1;
+    border-color: #b32b2b;
+}
+
+div.mce_inline_error {
+    background: none;
+    color: #b32b2b;
+    font-style: italic;
+    padding: 9px 0 0 0;
+    margin-left: 108px;
+    text-shadow: none;
+}
+
+#mce-success-response {
+    background: #fff8d1;
+    background: rgba(255,255,255,.75);
+    color: #222;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 0 21px 0;
+    padding: 10px 10px 11px 10px;
+    text-shadow: none;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.5);
+    -o-box-shadow: inset 0 1px 3px rgba(0,0,0,.5);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#contact-form textarea {height: 126px;}
+
+#contact-form fieldset, 
+#mc-embedded-subscribe-form fieldset {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/divider.gif) 0 100% repeat-x;
+}
+
+#captcha-div {
+    padding-top: 21px;
+    padding-left: 88px;
+}
+#captcha-div img {margin-bottom: 13px;}
+#captcha-div img, 
+#captcha-div input {vertical-align: top;}
+
+#contact-form input#captcha {margin-right: 25px; width: 145px;}
+
+.button, 
+a.button {
+    background-color: #aaa;
+    border: none;
+    color: #fff;
+    display: -moz-inline-box;
+    display: inline-block;
+    font-family: "skolar-1","skolar-2", "Garamond Premier Pro", Palatino, Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    text-shadow: -1px 0 0 rgba(0,0,0,0.5);
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.button span,
+a.button span {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+.cart, 
+.download,
+button.default {
+    background-color: #51b26c;
+}
+
+#cart-content button.default {margin-left: 10px;}
+#contact-form button {margin-left: 88px;}
+#mc-embedded-subscribe-form button {margin: 0 11px 0 108px;}
+
+.soon {background-color: #aaa;}
+
+.button:hover,
+a.button:hover {
+    background-color: #5f6168;
+}
+
+.actions {
+    margin-bottom: 21px;
+    position: relative;
+    width: 100%;
+}
+
+.actions .button {
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.button em {
+    background: rgba(255,255,255,0.25);
+    font-size: 9px;
+    font-style: normal;
+    margin-right: 3px;
+    padding: 1px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.coming-soon p {
+    background-color: #51b26c;
+    color: #fff;
+    display: -moz-inline-box;
+    display: inline-block;
+    padding: 0 9px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.edition-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* @end */
+
+/* @group Captions */
+.caption {
+    background: rgba(255,255,255,1);
+    color: rgba(0,0,0,.75);
+    margin-left: 31px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 9px 0;
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+    text-align: left;
+    width: 338px;
+}
+
+.mid-tall .caption {
+    width: 539px;
+}
+.extra-tall .caption {
+    width: 739px;
+}
+
+.caption * {margin: 0 9px;}
+.caption em {
+    color: #51b26c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    text-transform: none;
+}
+
+.caption span {
+    background: #b32b2b;
+    color: rgba(255,255,255,1);
+    margin: 0;
+    padding: 0 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.caption span.coming-soon {
+    background-color: rgba(81,175,108,1);
+}
+
+.caption p {
+    font-size: 12px;
+    line-height: 14px;
+    /*margin-left: 31px*/
+}
+
+.caption h2 {
+    color: rgba(0,0,0,.95);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* @end */
+
+/* @group Errors */
+div.error {
+    background: #fff8d1;
+    border: 1px solid #fff1a4;
+    color: #b32b2b;
+    font-style: italic;
+    padding: 9px 9px 10px 9px;
+    margin-bottom: 21px;
+    text-shadow: none;
+}
+
+div#noscript-error {margin-bottom: 0;}
+
+.error ul {margin-bottom: 0;}
+/* @end */
+
+/* @group Audio Effects */
+#effects {display: none;}
+/* @end */
+
+/* @group Footer */
+footer {
+    clear: both;
+    color: rgba(122,122,122,.75);
+    font-size: 12px;
+    margin: 0 85px 0 230px;
+    padding-top: 42px;
+    text-align: left;
+}
+
+#butter-brand {
+    position: relative;
+    top: -3px;
+}
+
+footer ul {font-size: 14px;}
+
+footer img {display: block;}
+/* @end */
+
+/* @group IE Message */
+#ie-users {
+    background: #fff1a4;
+    border-bottom: 1px solid #ffe139;
+    color: #2a2a2a;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#ie-users p {margin: 0;}
+/* @end */
+
+/* @group EE */
+#exit-stage-left {
+    position: absolute;
+    top: 252px;
+    left: -1650px;
+}
+/* @end */
+
+/* @group hCard */
+.vcard {margin-bottom: 21px;}
+.postal-code {display: block;}
+.org, 
+.country-name {display: none;}
+/* @end */
+
+/* @group Errors */
+#errors {
+    background: #b32b2b;
+    border-bottom: 1px solid #962424;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+#errors ul {
+    margin-bottom: 0;
+}
+/* @end */
+
+/* @group Miscellaneous */
+.callout {float: left; margin: 4px 5px 0 0;}
+.info {font-style: italic;}
+
+.droplets {
+    background: transparent url(http://assets.ligatureloopandstem.com/img/droplets.png) 0 0 no-repeat;
+    height: 21px;
+    width: 60px;
+}
+
+.nav ul {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    margin-right: 12px;
+}
+/* @end */

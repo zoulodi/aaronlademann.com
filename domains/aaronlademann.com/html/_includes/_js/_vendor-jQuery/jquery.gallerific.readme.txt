@@ -1,0 +1,69 @@
+Usage
+
+   1. Download the latest version of Galleriffic and jQuery 1.3 (also works with jQuery 1.2.6 ... use other versions of jQuery at your own risk)
+   2. View the source of this page to see a full-featured example setup. All container selectors are optional, so you may choose to not include an area (such as the loading container or caption container). Here is an example of all the elements needed for a full-featured setup:
+
+      <div id="{controlsContainerSel}"></div>
+      <div id="{loadingContainerSel}"></div>
+      <div id="{imageContainerSel}"></div>
+      <div id="{captionContainerSel}"></div>
+      <div id="{thumbsContainerSel}">
+          ... graceful degrading list of thumbnails (specific format specified below) ...
+      </div>
+                              
+
+   3. Setup the script references in your html page:
+
+      <head>
+          ...
+          <script type="text/javascript" src="js/jquery-1.3.min.js"></script>
+          <script type="text/javascript" src="js/jquery.galleriffic.min.js"></script>
+          ...
+      </head>
+                              
+
+   4. Within the thumbnails container {thumbsContainerSel}, build your graceful degrading unordered list of thumbnails linking to the image slides as such:
+
+      <ul class="thumbs noscript">
+          <li>
+              <a class="thumb" href="{imageSlideUrl}" title="{imageTitle}">
+                  <img src="{imageThumbUrl}" alt="{imageTitle (again for graceful degradation)}" />
+              </a>
+              <div class="caption">
+                  (Any html can go here)
+              </div>
+          </li>
+          ... (repeat for every image in the gallery)
+      </ul>
+                              
+
+   5. Initialize the gallery by calling the galleriffic initialization function, passing in the thumbnails container selector and an options hash. The following example shows the default options:
+
+      $(document).ready(function() {
+          var gallery = $('#gallery').galleriffic('{thumbsContainerSel}', {
+              delay:                  3000,
+              numThumbs:              20,
+              preloadAhead:           40, // Set to -1 to preload all images
+              enableTopPager:         false,
+              enableBottomPager:      true,
+              imageContainerSel:      '',
+              controlsContainerSel:   '',
+              captionContainerSel:    '',
+              loadingContainerSel:    '',
+              renderSSControls:       true,
+              renderNavControls:      true,
+              playLinkText:           'Play',
+              pauseLinkText:          'Pause',
+              prevLinkText:           'Previous',
+              nextLinkText:           'Next',
+              nextPageLinkText:       'Next &rsaquo;',
+              prevPageLinkText:       '&lsaquo; Prev',
+              enableHistory:          false,
+              autoStart:              false,
+              onChange:               undefined, // accepts a delegate like such: function(prevIndex, nextIndex) { ... }
+              onTransitionOut:        undefined, // accepts a delegate like such: function(callback) { ... }
+              onTransitionIn:         undefined, // accepts a delegate like such: function() { ... }
+              onPageTransitionOut:    undefined, // accepts a delegate like such: function(callback) { ... }
+              onPageTransitionIn:     undefined  // accepts a delegate like such: function() { ... }
+          });
+      });

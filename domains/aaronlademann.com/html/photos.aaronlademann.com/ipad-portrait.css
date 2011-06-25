@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* CSS Document */
+#custom_footer { display: none !important; }
+#header h1 a { left: 10px; }

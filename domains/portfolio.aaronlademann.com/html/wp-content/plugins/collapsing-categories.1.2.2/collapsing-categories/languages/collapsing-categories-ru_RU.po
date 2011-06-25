@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: СС\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Fat Cow <zhr@tut.by>\n"
+"Language-Team: Fat Cow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: collapscatlist.php:196
+#: collapscatlist.php:243
+#: collapscatlist.php:514
+#, php-format
+msgid "View all posts filed under %s"
+msgstr "Посмотреть все сообщения, поданные в соответствии с %s"
+
+#: collapscat.php:77
+#: collapscat.php:78
+msgid "Collapsing Categories"
+msgstr "Сворачивающиеся категории"
+
+#: collapscatUI.php:41
+msgid "Collapsing Categories Options"
+msgstr "Настройки сворачивающихся категорий"
+
+#: collapscatUI.php:43
+msgid "Display Options:"
+msgstr "Настройки отображения:"
+
+#: collapscatUI.php:65
+msgid "Update options"
+msgstr "Обновить настройки:"
+
+#: defaults.php:3
+#: options.txt:30
+msgid "Categories"
+msgstr "Категории"
+
+#: options.txt:2
+msgid "Show post Count"
+msgstr "Показать счетчик поста"
+
+#: options.txt:16
+#: options.txt:26
+msgid "Ascending"
+msgstr "Возрастание"
+
+#: options.txt:17
+#: options.txt:27
+msgid "Descending"
+msgstr "Убывание"
+
+#: options.txt:31
+msgid "Tags"
+msgstr "тэги"
+
+#: options.txt:32
+msgid "Categories and Tags"
+msgstr "Категории и тэги"
+
+#: options.txt:35
+msgid "Sub-categories and Posts"
+msgstr "Субкатегории и посты"
+
+#: options.txt:37
+msgid "Just Sub-categories"
+msgstr "Только суб-категории"
+
+#: options.txt:49
+msgid "Links to category archive"
+msgstr "Ссылки к категориям архива"
+
+#: options.txt:66
+msgid "custom"
+msgstr "выбор"
+
+#: options.txt:107
+msgid "None"
+msgstr "нету"
+
+#: options.txt:111
+msgid "text (RSS)"
+msgstr "текст (RSS)"
+
+#: options.txt:115
+msgid "image"
+msgstr "rfhnbyrf"
+

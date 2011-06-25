@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>Mizzou Marketing - Apparel</title>
+<script type="text/javascript" src="swfobject.js"></script>
+<style type="text/css">	
+
+	/* hide from ie on mac \*/
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	#flashcontent {
+		height: 100%;
+	}
+
+	/* end hide */
+
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #dadada;
+		color:#333333;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+	#flashcontent {
+		font-size: 11px;
+		color: #333333;
+	}
+	body a, #flashcontent a {
+		color: #f0b82d;
+		text-decoration: none;
+	}
+	body a:hover, #flashcontent a:hover {
+		text-decoration: underline;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="flashcontent">This slideshow requires Macromedia Flash. <a href="http://www.macromedia.com/go/getflashplayer/">Get Macromedia Flash Here.</a> If you have Flash installed, <a href="index.html?detectflash=false">click here to view slideshow</a></div>	
+
+	<script type="text/javascript">
+
+		var fo = new SWFObject("viewer.swf", "viewer", "100%", "100%", "7", "#dadada");	
+
+		fo.addVariable("preloaderColor", "0xf0b82d");
+
+		fo.addVariable("xmlDataPath", "gallery.xml");	
+
+		fo.write("flashcontent");	
+
+	</script>	
+
+</body>
+
+</html>

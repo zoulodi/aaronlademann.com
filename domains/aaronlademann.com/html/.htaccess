@@ -1,0 +1,18 @@
+DirectoryIndex index.asp
+
+AddType text/x-component .htc
+
+Options +Includes
+AddHandler server-parsed .shtml .html .htm .asp .php
+
+Redirect 301 /index.html http://aaronlademann.com/
+Redirect 301 /aboutme.html http://aaronlademann.com/about/
+Redirect 301 /portfolio.html http://aaronlademann.com/portfolio/
+Redirect 301 /BBtable.html http://aaronlademann.com/_old/BBtable.html
+Redirect 301 /BBtable_all.html http://aaronlademann.com/_old/BBtable_all.html
+Redirect 301 /mizzouBballComparisons.html http://aaronlademann.com/_old/mizzouBballComparisons.html
+Redirect 301 /RRtable.html http://aaronlademann.com/_old/RRtable.html
+
+Redirect 302 /files/Lademann_Resume_0208.pdf http://aaronlademann.com/files/Lademann_Resume_0511.pdf
+Redirect 302 /files/Lademann_Resume_0409.pdf http://aaronlademann.com/files/Lademann_Resume_0511.pdf
+Redirect 302 /files/Lademann_Resume_0409-c.pdf http://aaronlademann.com/files/Lademann_Resume_0511.pdf

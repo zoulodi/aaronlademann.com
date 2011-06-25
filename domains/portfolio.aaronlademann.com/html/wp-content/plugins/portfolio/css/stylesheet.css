@@ -1,0 +1,98 @@
+.home, .single, .page
+{
+	cursor: url(../images/arrow_auto.png), auto;
+}
+span.lable
+{
+	font-weight: bold;
+}
+#content .entry p, #content .entry-content p
+{
+	margin-bottom:5px;
+	line-height: 18px;
+}
+
+.portfolio_images_gallery
+{
+	width:240px;
+	float:left;
+	padding-right:6px;
+	padding-bottom:10px;
+}
+.portfolio_images_block
+{
+	clear:both;
+}
+
+a.lightbox
+{
+	cursor: url(../images/icon_zoom.png), se-resize;
+}
+
+#lightbox-nav-btnNext {
+	cursor: url(../images/arrow_right.png), e-resize;
+}
+
+#lightbox-nav-btnPrev {
+	cursor: url(../images/arrow_left.png), e-resize;
+}
+
+#colorbox 
+{
+	cursor: url(../images/arrow_auto.png), auto;
+}
+
+.portfolio_images_rows
+{
+	clear:both;
+	border-top: 1px dotted #939393;
+	height:100px;
+	padding-top:10px;
+}
+
+.portfolio_admin_box
+{
+	width: 98%; 
+	margin: 10px auto 10px auto; 
+	background-color: #F9F9F9; 
+	border: 1px solid #DFDFDF; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	padding: 10px;
+}
+
+.portfolio_admin_subbox
+{
+	border-bottom: 4px double #DFDFDF;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+
+#addimageinfo
+{
+	-moz-border-radius: 11px 11px 11px 11px;
+    -moz-box-sizing: content-box;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 11px !important;
+    line-height: 13px;
+    padding: 3px 8px;
+    text-decoration: none;
+	background-color: #FFFFFF;
+    border-color: #DFDFDF;
+}
+
+.wrap #icon-edit.icon32-posts-portfolio
+{
+ background: url("../images/icons_32.png") no-repeat scroll left top transparent;
+}
+
+#adminmenu #menu-posts-portfolio:hover div.wp-menu-image, #adminmenu #menu-posts-portfolio.wp-has-current-submenu div.wp-menu-image
+{
+ background: url("../images/menu.png") no-repeat scroll left top transparent;
+}
+
+#adminmenu #menu-posts-portfolio div.wp-menu-image {
+    background: url("../images/menu.png?ver=20100531") no-repeat scroll left -32px transparent;
+}

@@ -1,0 +1,6 @@
+DirectoryIndex index.asp
+
+AddType text/x-component .htc
+
+Options +Includes
+AddHandler server-parsed .shtml .html .htm .asp .php

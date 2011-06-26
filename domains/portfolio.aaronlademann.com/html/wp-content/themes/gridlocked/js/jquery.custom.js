@@ -266,7 +266,7 @@ jQuery(document).ready(function() {
 	}
 	
 	tz_overlay();
-	
+
 /*-----------------------------------------------------------------------------------*/
 /*	Back to Top
 /*-----------------------------------------------------------------------------------*/
@@ -276,9 +276,9 @@ jQuery(document).ready(function() {
 	function tz_backToTop(topLink) {
 		
 		if(jQuery(window).scrollTop() > 0) {
-			topLink.fadeIn(200);
+			topLink.stop().fadeIn(200);
 		} else {
-			topLink.fadeOut(200);
+			topLink.stop().fadeOut(200);
 		}
 	}
 	
@@ -286,11 +286,41 @@ jQuery(document).ready(function() {
 		tz_backToTop(topLink);
 	});
 	
-	topLink.find('a').click( function() {
+	// aaronl: custom (was pointing to the anchor link)
+	jQuery(topLink).click( function() {
 		jQuery('html, body').stop().animate({scrollTop:0}, 500);
 		return false;
 	});
+	 
+	// aaronl: custom (since i'm removing the anchor link, i need to set up a hover system for the wrapper div)				
+	jQuery(document).ready(function(){
+		var colorIn;
+		var colorOut;
+		var hovClass;
+		if(jQuery.support.opacity){
+			colorIn  = 'rgba(0, 0, 0, .1)';
+			colorOut = 'rgba(0, 0, 0, 0)';
+			hovClass = 'hover';
+		} else {
+			colorIn  = '#d3d7d8';
+			colorOut = 'transparent';
+			hovClass = 'ieHover';
+		}
 	
+		// firefox seems to be making the browser itself change opacity
+		// the plugin i'm using here may be pretty buggy.
+		jQuery('#back-to-top, .insetBox > li:not([class*="current"]) > a').hover(  
+			function () {
+				jQuery(this).addClass(hovClass);
+				jQuery(this).stop().animate({backgroundColor: colorIn});
+			},
+			function () {
+				jQuery(this).removeClass(hovClass);
+				jQuery(this).stop().animate({backgroundColor: colorOut}); 
+			}
+		);
+	
+	});
 /*-----------------------------------------------------------------------------------*/
 /*	Add title attributes
 /*-----------------------------------------------------------------------------------*/

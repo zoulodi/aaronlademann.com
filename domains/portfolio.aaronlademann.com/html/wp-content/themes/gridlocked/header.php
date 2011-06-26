@@ -20,7 +20,6 @@
 	<!-- RSS & Pingbacks -->
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?> RSS Feed" href="<?php if (get_option('tz_feedburner')) { echo get_option('tz_feedburner'); } else { bloginfo( 'rss2_url' ); } ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />  
-  
   <?php
   $browserAsString = $_SERVER['HTTP_USER_AGENT'];
   if (strstr($browserAsString, " AppleWebKit/") && strstr($browserAsString, " Mobile/")) { 
@@ -29,12 +28,9 @@
 		$is_ios = true; 
 		if ( !is_single() ) {
 		?>
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0;">
-  	<link rel="stylesheet" type="text/css" media="screen" href="http://aaronlademann.com/_includes/_css/iOS.css" />  
-    
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0;">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://aaronlademann.com/_includes/_css/iOS.css" />    
 	<?php }} ?>
-  
-  
 	<!-- Theme Hook -->
 	<?php wp_head(); ?>
 
@@ -50,20 +46,17 @@
     <!--BEGIN aaronlademann.com primary navigation-->
       <div id="masthead">
           
-        <div id="logoContainer">
-            <a id="mastlogo" href="http://aaronlademann.com/" title="AaronLademann.com" rel="nofollow">
-              <img src="http://aaronlademann.com/_images/_template/masthead-aaronlademann.com-logo.png" width="294" height="52" alt="<?php echo bloginfo( 'name' ) ?>" />
-            </a>
-  
-            <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-            <<?php echo $heading_tag; ?> class="heading"><?php echo bloginfo( 'name' ) ?></<?php echo $heading_tag; ?>>  
-  
-        </div>
-        
         <div id="topNav" class="nav">
   
           <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '')); ?>
           
+        </div>
+          
+        <div id="logoContainer">
+            <a id="mastlogo" href="http://aaronlademann.com/" title="AaronLademann.com" rel="nofollow">
+              <img src="http://aaronlademann.com/_images/_template/masthead-aaronlademann.com-logo.png" width="294" height="52" alt="<?php echo bloginfo( 'name' ) ?>" />
+            </a> 
+  
         </div>
       
       </div>

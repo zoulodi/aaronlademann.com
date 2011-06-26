@@ -8,9 +8,9 @@
         <!-- BEGIN #footer -->       
         <div id="footer" class="clearfix">
         		
-            <nav id="footerNav" class="nav">
+            <div id="footerNav" class="nav">
 							<?php wp_nav_menu( array( 'theme_location' => 'secondary') ); ?>
-            </nav>
+            </div>
             
             <p class="copyright" id="copyright">&copy; Copyright <?php echo date( 'Y' ); ?> <a href="http://aaronlademann.com">Aaron Lademann</a></p>
             

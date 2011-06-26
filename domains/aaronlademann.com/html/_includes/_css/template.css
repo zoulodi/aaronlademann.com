@@ -17,11 +17,11 @@
 .current-page a,
 .current-menu-item a { background-color: #ffedac; }
 
-a { color: #08c; }
+a, .aafolio .link { color: #08c; }
 .link { cursor: pointer !important; }
 a,input { outline: 0 none !important; }
 a:link, a:visited, a:active { text-decoration: none; }
-a:hover, .link:hover { text-decoration: underline; color: #09f; }
+a:hover, .link:hover, .aafolio .link.hover, .aafolio .link.hover * { text-decoration: underline; color: #09f; }
 
 #masthead, #contentWrap, #footer { min-width: 990px; }
 #masthead, #masthead #mastlogo, #footer { position: absolute; left: 0; width: 100%; }

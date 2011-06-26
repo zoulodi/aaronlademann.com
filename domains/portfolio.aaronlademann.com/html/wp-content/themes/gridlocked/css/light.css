@@ -9,9 +9,9 @@ This file contains styles related to the colour scheme of the theme
 /*#bg-line { background: url(../images/light/line.png) no-repeat; }*/
 
 /* aaronl: custom spackle bg */
-body { background: url('http://aaronlademann.com/_images/_template/_portfolio/spackle_bg_base.png'); }
-#container { background: url('http://aaronlademann.com/_images/_template/_portfolio/spackle_bg_top.png') left top repeat-x; }
-#content { background: url('http://aaronlademann.com/_images/_template/_portfolio/spackle_bg_lighting_compressed.jpg') 140px top no-repeat; }
+body { background: #ecf0f1 url('/wp-content/themes/gridlocked/images/light/spackle_bg_base.png'); }
+#container { background: url('/wp-content/themes/gridlocked/images/light/spackle_bg_top.png') left top repeat-x; }
+#content { background: url('/wp-content/themes/gridlocked/images/light/spackle_bg_lighting_compressed.jpg') 140px top no-repeat; }
 
 pre { background: url(../images/light/pre_bg.png); }
 
@@ -96,12 +96,12 @@ a:hover { color: #000; }
 .comment-body p a:hover,
 #submit:hover span.icon,
 .single-page-navigation a:hover,
-#back-to-top a:hover .icon,
+#back-to-top.hover .icon,
 .entry-content a:hover,
 #overlay-inner a:hover,
 .current-cat a,
 .current-page a,
-.current-menu-item a { background-color: #feea36; }
+.current-menu-item a { background-color: #ffedac; }
 
 .comment-body p a:hover,
 .entry-content a:hover,
@@ -122,7 +122,7 @@ textarea,
 
 .single-page-navigation a,
 #submit span.icon,
-#back-to-top a .icon {
+#back-to-top .icon {
 	background-color: #66696d;
 }
 
@@ -185,3 +185,38 @@ blockquote,
 .page .entry-title { border-bottom: 1px solid #f3f3f3; }
 
 .line { border-bottom: 1px solid #d6d6d6; }
+
+/* custom "inset box" style links and effects (requires .js effects in jquery.custom.js */
+#back-to-top.hover, 
+.insetBox a:hover,
+.insetBox .hover {
+	-webkit-box-shadow: inset -1px 1px 1px rgba(70, 70, 70, 0.20); 
+		-moz-box-shadow: inset -1px 1px 1px rgba(70, 70, 70, 0.20); 
+			box-shadow: inset -1px 1px 1px rgba(70, 70, 70, 0.20); 
+}
+/* firefox 5 doesn't like my animated bg color */
+.gecko #back-to-top.hover, 
+.gecko .insetBox a:hover,
+.gecko .insetBox .hover {
+	background-image: url('/wp-content/themes/gridlocked/images/light/rgba_black_10pct.png');
+}
+/* ie just sucks all around. */
+#back-to-top.ieHover, 
+.insetBox a:hover {
+	background-color: #ced2d3; 
+}
+.ie #back-to-top { background-color: Transparent; }
+.gecko .insetBox .current-menu-item a:hover, 
+.gecko .insetBox .current-cat a:hover,
+.ie .insetBox #back-to-top.ieHover,
+.ie .insetBox a.ieHover, .ie .insetBox .ieHover {
+	background-image: none !important;
+}
+.insetBox .current-menu-item a:hover, 
+.insetBox .current-cat a:hover { background-color: #ffedac; }
+#back-to-top.hover, .insetBox.link.hover *, 
+.insetBox a:hover,
+.insetBox .hover {
+	text-decoration: none !important; 
+	color: #333 !important;   
+}

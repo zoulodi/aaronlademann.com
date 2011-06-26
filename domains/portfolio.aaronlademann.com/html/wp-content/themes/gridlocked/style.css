@@ -201,10 +201,11 @@ h6 {
 	height: 100%;
 	padding: 0;
 	position: relative;
-	top: 80px;
+	top: 52px;
+	/*top: 80px;*/
 }
-/* FF */
-.gecko #container { top: 52px; }
+/* FF 
+.gecko #container { top: 52px; }*/
 
 #content { 
 	float: left;
@@ -341,26 +342,72 @@ h6 {
 	z-index: 500;
 }
 /* webkit browsers */
-.chrome #sidebar, .safari #sidebar { margin-top: 80px; }
+.chrome #sidebar, .safari #sidebar { margin-top: 52px; }
 #sidebar .widget {
-	/* aaronl: custom - since we widened the #sidebar element, this is necessary. */
-	margin-left: 32px;
+	position: relative;
+	width: 164px;
+	left: 26px;
 }
 #sidebar #logo {
 	/* exclude the logo div from the above margin */
 	margin-left: 0;
 }
 
-#back-to-top { display: none; }
-
-#back-to-top a { 
-	font-size: 11px; 
+/* aaronl: custom ( customize the bulleted list sidebar nav(s) ) */
+.insetBox li, .insetBox li a {
 	display: block;
+	float: left;
+	clear: left; 
+}
+.insetBox li {
 	position: relative;
-	z-index: 1000;
+	top: auto;
+	left: 0;
+}
+.insetBox li.current-menu-item {
+	left: 2px;
+}
+.insetBox li a {
+	padding: 3px 0 4px 4px;
+}
+#sidebar .widget .insetBox {
+	position: relative;
+	top: 5px;
+	float: left;
+	margin-bottom: 15px; /* keep the "back-to-top" button spaced away from it. */
+}
+#sidebar .widget .insetBox li a {
+	/* left sidebar */
+	width: 160px; /* 190 - 4px padding - left margin of #sidebar .widget */
+}
+#back-to-top.insetBox {
+	padding: 4px 0 5px 4px;
 }
 
-#back-to-top a .icon {
+/* custom "inset box" style links and effects (requires .js effects in jquery.custom.js */
+#back-to-top.hover, 
+.insetBox a:hover {
+	-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+	  	border-radius: 2px;
+}
+
+/* aaronl: custom (removed the anchor element) */
+#back-to-top, #back-to-top .text { float: left; display: block; }
+#back-to-top { 
+	width: 180px;
+	padding: 4px 0 5px 4px; 
+	font-size: 11px; 
+	position: relative;
+	left: 6px;
+	z-index: 1000;
+	cursor: pointer !important;
+		/* is faded in via jquery.custom.js */
+		display: none; 
+} 
+
+#back-to-top .icon {
+	cursor: pointer !important;
 	float: left;
 	width: 21px;
 	height: 21px;
@@ -370,7 +417,8 @@ h6 {
 	   		border-radius: 2px;
 }
 
-#back-to-top a .icon .arrow {
+#back-to-top .icon .arrow {
+	cursor: pointer !important;
 	background-position: 0 -85px;
 	margin: 6px 0 0 8px;
 	display: block;
@@ -380,7 +428,7 @@ h6 {
 	top: auto;
 }
 
-#back-to-top a:hover .icon .arrow { background-position: -6px -85px; }
+#back-to-top.hover .icon .arrow { background-position: -6px -85px; }
 
 #logo,
 #logo a {

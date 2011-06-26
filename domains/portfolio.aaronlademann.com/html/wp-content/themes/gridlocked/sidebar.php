@@ -10,9 +10,9 @@
 				if (get_option('tz_plain_logo') == 'true') { ?>
 				<a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
 				<?php } elseif (get_option('tz_logo')) { ?>
-				<a href="<?php echo home_url(); ?>"><img id="logoimg" src="<?php echo get_option('tz_logo'); ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+				<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="logoimg" src="<?php echo get_option('tz_logo'); ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
 				<?php } else { ?>
-				<a href="<?php echo home_url(); ?>"><img id="logoimg" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
+				<a href="<?php echo home_url(); ?>" rel="nofollow"><img id="logoimg" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
 				<?php } ?>
                 
                 <?php $tagline = get_option('tz_tagline'); ?>
@@ -48,10 +48,11 @@
             
             <?php if(is_page_template('template-portfolio.php') || is_tax('skill-type') || get_post_type() == 'portfolio') :?>
             <div class="widget">
-                <span class="widget-title"><strong>Portfolio Filters</strong></span>
-                <ul id="filter">
+                <span class="widget-title"><strong>View Options</strong></span>
+                <ul id="filter" class="insetBox">
                 	<li <?php if(is_page_template('template-portfolio.php')) : ?>class="current-menu-item"<?php endif; ?>>
-                  	<a href="<?php echo get_permalink( get_option('tz_portfolio_page') ); ?>" rel="nofollow">Everything</a>
+                  	<?php $full_folio_rel = ( is_home() || is_front_page() ) ? 'rel="nofollow"' : ''; ?>
+                    <a href="<?php echo get_permalink( get_option('tz_portfolio_page') ); ?>" <?php echo $full_folio_rel; ?>>Full Portfolio</a>
                   </li>
                   <?php wp_list_categories(array('title_li' => '', 'taxonomy' => 'skill-type', 'depth' => 1)); ?>
                 </ul>
@@ -59,11 +60,11 @@
             <?php endif; ?>
             
             <!-- BEGIN #back-to-top -->
-            <div id="back-to-top">
-            	<a href="#" rel="nofollow">
+            <div id="back-to-top" class="link insetBox">
+            	<!--<a href="#" rel="nofollow">-->
                 	<span class="icon"><span class="arrow"></span></span>
                     <span class="text"><?php _e('Back to Top', 'framework'); ?></span>
-                </a>
+                <!--</a>--> 
             <!-- END #back-to-top -->
             </div>
 		

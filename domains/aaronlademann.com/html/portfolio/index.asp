@@ -1,11 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/site.dwt.asp" codeOutsideHTMLIsLocked="false" -->
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Aaron Lademann" />
-<meta name="copyright" content="Copyright Aaron Lademann. All Rights Reserved." />
-<link rel="shortcut icon" href="/favicon.ico" />
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/site.dwt.asp" codeOutsideHTMLIsLocked="false" --><head>
+<!-- force latest IE rendering || force Chrome Frame if installed -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="utf-8" />
 <!-- InstanceBeginEditable name="docmeta" -->
 <link rel="canonical" href="http://aaronlademann.com/portfolio/" />
 <meta name="robots" content="index,follow" />
@@ -13,26 +10,17 @@
 <meta name="Keywords" content="web developer, interface designer, web designer, web professional, graphic designer, business identity specialist, web portfolio, aaron lademann, lademann, lademann resume, st. louis professionals, st. louis graphic designer, st. louis web developer, st. louis IT pro" />
 <meta name="Description" content="Aaron Lademann provides innovative business solutions for companies seeking creativity and leadership. With his eclectic range of design, development, marketing and analytical skills - combined with proven leadership abilities - he drives teams to have fun producing profitable results." />
 <!-- InstanceEndEditable -->
-<link rel="stylesheet" type="text/css" href="/_includes/_css/base.css" media="all" />
-<script type="text/javascript">
+<meta name="author" content="Aaron Lademann" />
+<meta name="copyright" content="Copyright Aaron Lademann. All Rights Reserved." />
 
-  var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-3765006-1']);
-	_gaq.push(['_setDomainName', '.aaronlademann.com']);
-	_gaq.push(['_setAllowHash', false]);
-	_gaq.push(['_trackPageview']); 
-
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script src="http://www.google.com/jsapi?key=ABQIAAAAtAkaUPmcW5p6yEQcP3mBahTXPj9HyATnHa6-t7ycfhcRticuRRTk9MFjJJyGgpEwQf6dpvibq4rfLw" type="text/javascript"></script>
-<script type="text/javascript">google.load("jquery", "1.4.2");</script>
-<!-- InstanceBeginEditable name="head" -->
+<!-- mobile viewport optimized -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="http://aaronlademann.com/_includes/_css/base.css" media="all" />
+<!-- InstanceBeginEditable name="head_before_scripts" -->
+<!-- InstanceEndEditable -->
+<script src="/_includes/_js/head.min.js"></script>
+<!-- InstanceBeginEditable name="head_after_scripts" -->
 <script type="text/javascript" src="swfobject.js"></script>
 <style type="text/css">
 #contentWrap, .content, #flashcontent {
@@ -45,7 +33,7 @@
 </head>
 <body>
 <div id="masthead">
-	<a id="mastlogo" href="/"><img src="/_images/_template/masthead-aaronlademann.com-logo.png" alt="www.aaronlademann.com" width="294" height="52" align="left" /></a>
+	<a id="mastlogo" href="/"><img src="http://aaronlademann.com/_images/_template/masthead-aaronlademann.com-logo.png" alt="aaronlademann.com" width="294" height="52" align="left" /></a>
 	<!-- InstanceBeginEditable name="masthead" -->
     <div class="nav" id="topNav">
     	<ul class="portfolio">
@@ -82,17 +70,21 @@
     		<li><a href="http://twitter.com/alademann" target="_blank">twitter</a></li>    
     	</ul> 
     </div>
-    <p id="copyright"><small>&copy; 2011</small></p>
+    <p id="copyright"><small>&copy; <% Response.Write Year(now) %></small></p>
 </div>
-<script type="text/javascript">
-$(document).ready(function(){
-	var nav = $(".nav");
-	$.each(nav,function(){
-		var define = $(this).find("ul").attr("class");
-		$(this).find("ul > li[id='" + define + "']").addClass("active");
-	});
-	
-});
+<script> 
+		head.js("/_includes/_js/jquery-1.6.2.min.js").js("/_includes/_js/analytics.js", 
+		function() {
+			// inline scripts here			
+			var nav = $(".nav");
+			$.each(nav,function(){
+				var define = $(this).find("ul").attr("class");
+				$(this).find("ul > li[id='" + define + "']").addClass("active");
+			});
+		});
 </script>
+<!-- InstanceBeginEditable name="end_body_scripts" -->
+
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

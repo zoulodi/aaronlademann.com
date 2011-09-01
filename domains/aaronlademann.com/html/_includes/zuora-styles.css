@@ -1,0 +1,157 @@
+/* CSS Styles to Enhance Zuora's Maddening Interface */
+
+/*---------------- PRODUCT CATALOG ----------------*/
+/* product list view fixed widths and padding adjustments (make the table not look like poop) */
+#Products_Tabs_Content .listtable td div {
+    /* width: 100px; */
+    /* overflow: hidden; */
+    width: auto !important;
+    min-width: 50px !important;
+    padding: 5px 15px 5px 5px !important;
+}
+/* individual columns */
+#Products_Tabs_Content .listtable tr td { min-width: 75px; width: 5%; padding-right: 2px; }
+#Products_Tabs_Content .listtable tr td:nth-child(1) { min-width: 175px !important; width: auto; } /* product name */
+    #Products_Tabs_Content .listtable tr td:nth-child(1) div { min-width: 100px !important; font-weight: bold; }
+#Products_Tabs_Content .listtable tr td:nth-child(2) {  } /* sku */
+#Products_Tabs_Content .listtable tr td:nth-child(3) { min-width: 90px; } /* effective start */
+#Products_Tabs_Content .listtable tr td:nth-child(4) { min-width: 90px; } /* effective end */
+#Products_Tabs_Content .listtable tr td:nth-child(5) { min-width: 90px; } /* last modified */
+#Products_Tabs_Content .listtable tr td:last-child { min-width: 60px; width: 60px; } /* view|del */
+/* individual column headers (thead) */
+#Products_Tabs_Content .listtable thead tr th { min-width: 75px; padding: 5px 15px 5px 5px; }
+#Products_Tabs_Content .listtable thead tr th:nth-child(1) { width: 19% !important; padding-left: 10px; } /* product name */
+#Products_Tabs_Content .listtable thead tr th:nth-child(2) { width: 12% !important; } /* sku */
+#Products_Tabs_Content .listtable thead tr th:nth-child(3) { width: 20% !important; } /* effective start */
+#Products_Tabs_Content .listtable thead tr th:nth-child(4) { width: 18% !important; } /* effective end */
+#Products_Tabs_Content .listtable thead tr th:nth-child(5) { width: 18% !important; } /* last modified */
+#Products_Tabs_Content .listtable thead tr th:last-child { width: 12% !important; } /* view|del */
+
+/*---------------- GLOBAL UI COLORS / TEMPLATE ADJUSTMENTS ----------------*/
+
+/* remove hideous green primary color */
+a:link{color: #08c;text-decoration:none;} 
+a:visited{color: #08c;text-decoration:none;} 
+a:active{color: #08c;text-decoration:none;} 
+a:hover{color: #09f;text-decoration:underline;}
+
+a.panel_link{color: #08c;text-decoration:none;} 
+a.panel_link:visited{color: #08c;text-decoration:none;} 
+a.panel_link:active{color: #08c;text-decoration:none;} 
+a.panel_link:hover{color: #09f;text-decoration:none;}
+
+ul.ul_organ_pro li a{ text-decoration:none; color:#08c;}
+.applic_block h2{ color:#08c; }
+ul.ul_press_release li{ color:#08c; }
+ul.ul_edit_1 li a{color:#08c;}
+
+#footer ul li a, .font_color_org, a.link_custome{color:#08c;}
+.list_view_table .status_active .td_status , .list_view_table .status_active a{color:#08c;}
+.list_view_table .status_active .td_action a , .list_view_table .status_draft .td_action a{color:#08c;}
+.listtable td a:link{ color:#08c; }
+.listtable td a:visited{ color:#08c; }
+.listtable td a:hover{ color:#08c; }
+.listtable td a:active{	color:#08c; }
+
+/* remove dark green primary color */
+a.more, ul.list_nav_2 a.link2, ul.actions_ul a,ul.invoice_ico_list a,
+.customar_nav dd a, a.customar_link_1, .customar_view_title,
+ul.view_list li a, ul.view_list_2 li a, p.font_r_11, p.pop_title,
+a.edit_link, .content-login-right a.link2, .login-button-bar a.link2,
+.content-register-right a.link2{color:#0564ca !important;}
+
+
+
+ul.list_nav_2 li.over, ul.list_nav_2 div.tip_cont, .sub_p{ background-color:#0564ca !important;}
+
+
+/* remove light green header colors */
+#customar_title{background:#f1f5f9;}
+	#customar_dv #customar_title dl.customar_title_dl { border: 1px solid #f1f5f9 !important; }
+.customar_content .cust_dv_coner{background-color:#f1f5f9;}
+/*.customar_content .cust_y{background-color:#f9eeb6; margin-top:15px; clear:both;}
+.customar_content .cust_no_edit{background-color:#f8f8f8; margin-top:15px; clear:both;}
+.customar_content .pro_catalog_coner{background-color:#6fb43f; margin-top:15px; clear:both;}*/
+.search_dv input{background-color:#f1f5f9;}
+.available_title{background-color:#f1f5f9;}
+.available_area{background-color:#f1f5f9;}
+
+a.customar_link_1, a.customar_link_2 {border-top:1px solid #d2e0ef;}
+.cust_dv dd a.last, .accout_cont_dv, .column-block .with_editblock .status-dv {border-bottom:1px solid #d2e0ef;}
+
+/* other color adjustments */
+/*#application_top_dv{background:url(../Images/applicat_top_bg.gif) top left repeat-x; clear:both;}
+#application_top_dv p{height:47px; line-height:47px; display:block; color:#808080; font-size:12px; padding:0px 5px;}
+#application_colum_right{float:left; width:55%;}
+#application_colum_left{float:left; width:40%; margin-right:30px;}
+#application_colum_right .applic_colum{margin-top:10px;border:1px dotted #d3e9c2; background-color:#f8f7f2; padding:10px;}
+#application_colum_left .applic_colum{margin-top:10px;border:1px dotted #d3e9c2; background-color:#f6faec; padding:10px;}
+.applic_colum .applic_block{margin-bottom:10px; background-color:#e1eec3;}
+.applic_colum .applic_block .applic_area{margin:0px 5px; background-color:#fff; padding:0px 10px;}
+.applic_colum .applic_block .applic_area img{margin-top:6px;}
+
+.applic_block a{color:#6db43c; text-decoration:none; margin-left:10px; line-height:16px; float:right; display:block; margin:8px 5px;}
+.applic_block a.applic_edit_link{padding-right:5px; background:url(../Images/jian_ico_3.gif) right no-repeat; width:25px;}
+.applic_block a.applic_remove_link{padding-right:5px; border-right:1px dotted #6db43c; width:50px;}
+#application_colum_right .applic_block{background-color:#f2f2e8;}
+#application_colum_right .applic_block b.ra1,#application_colum_right .applic_block b.ra2,#application_colum_right .applic_block b.ra3,#application_colum_right .applic_block b.ra4{background-color:#f2f2e8!important;}
+
+.tool-tip {color: #fff;width: 150px;z-index: 13000; position:absolute;}
+.tool-text {font-size: 11px;padding: 4px 8px 4px 8px;background-color:#000000;}
+
+a.new_amendment_ico{width:109px; height:20px; padding-left:20px; font-size:10px; background:url(../Images/ico_bg_4.gif) top left no-repeat; display:block; line-height:20px; color:#818181; font-weight:bolder; text-decoration:none; text-align:left;}
+
+a.font_color_black{text-decoration:none;}a.font_color_black:hover{text-decoration:underline;}
+
+a.add_subscription_button{ width:149px; height:27px; line-height:27px; font-size:11px; font-weight:bolder; padding-left:35px; background:url(../Images/add_subscription_button_bg.gif) top left no-repeat; color:#737373;}
+
+.font_14_s_y{font-size:14px; font-weight:bolder; color:#6fb342;}
+#main_title .font_14_s_y{ line-height:30px;}
+.ares_txt15{ font-family:Verdana; font-size:10px; color:#808080;  font-weight:normal;}
+.iblock{ display:inline-block;}
+.iblock{  *display:inline;}
+.font_color_red{color:#ee1d23;}
+.font_color_y{color:#fbb039;}
+a.font_color_y:link{color:#fbb039; text-decoration:none;}
+a.font_color_y:hover{text-decoration:underline;}
+.font_color_gray{color:#808080;}
+.font_color_org{color:#6DB33F; text-decoration:none;}
+a.font_color_gray{text-decoration:none;}
+a.font_color_gray:hover{text-decoration:underline;}
+
+a.font_color_org:hover{text-decoration:underline;}
+.font_color_black{color:#000000; text-decoration:none;}
+a.font_color_black{text-decoration:underline;}
+
+.erro{text-decoration:line-through;}
+
+.font_color_blue{color:#7897cd;}
+
+.font_color_black2{color:#404040;}
+.font_color_black3{color:#d2d2d2;}
+.font_color_black4{color:#c0c0c0;}
+.font_color_black5{color:#d9d9d9;}
+.font_color_black6{color:#b2b2b2;}
+
+a.link_custome{font-size:11px; color:#6DB33F; text-decoration:none; font-weight:bolder;}
+a.link_custome:hover{text-decoration:underline;}
+a.link_custome_y{font-size:11px; color:#fbb039; text-decoration:none; font-weight:bolder;}
+a.link_custome_y:hover{text-decoration:underline;}
+
+a.add_plan_link{width:172px; height:20px; background:url(../Images/ico_bg_1.gif) top left no-repeat; padding-left:20px; font:10px/20px Verdana, Arial, Helvetica, sans-serif; font-weight:bolder; color:#737373;}
+
+a.submit_cancel{width:60px; height:23px; background:url(../Images/cancel_button_bg.gif) top left no-repeat; text-align:center; font:10px/23px Verdana, Arial, Helvetica, sans-serif; font-weight:bolder; color:#737373; margin:10px 10px 0px 0px; text-decoration:none; display:block;}
+a.submit_cancel:hover{text-decoration:underline;}
+
+a.ico_3{width:105px; height:20px; background:url(../Images/ico_bg_2.gif) top left no-repeat; display:block; font:10px/20px Verdana, Arial, Helvetica, sans-serif; color:#818181; font-weight:bolder; padding-left:20px;}
+
+a.bown_button{width:155px; padding-left:36px; height:27px; background:url(../Images/bown_link_bg.gif) top left no-repeat; color:#737373; text-decoration:none; line-height:27px; margin:10px 0px; font-size:11px; font-weight:bolder;}
+a.bown_button:hover{text-decoration:underline;}
+
+a.add_account_button{width:120px; height:27px; padding-left:36px; background:url(../Images/acc_link_bg.gif) top left no-repeat; line-height:27px; color:#737373; text-decoration:none; display:block; line-height:27px;font-size:11px; font-weight:bolder;}
+a.add_account_button:hover{text-decoration:underline;}
+
+a.add_adjustment_button{width:135px; height:27px; padding-left:36px; background:url(../Images/add_adjustment_button_bg.gif) top left no-repeat; line-height:27px; color:#737373; text-decoration:none; display:block; line-height:27px;font-size:11px; font-weight:bolder;}
+a.add_adjustment_button:hover{text-decoration:underline;}
+
+*/

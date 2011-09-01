@@ -1,0 +1,15 @@
+
+/* Prociono */
+@font-face {
+  font-family: "ProcionoTTRegular";
+  src: url("/_includes/_webfonts/prociono/procionott-webfont.eot?iefix") format("eot");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: "ProcionoTTRegular";
+  src: url("http://:/") format("No-IE-404"), url("/_includes/_webfonts/prociono/procionott-webfont.woff") format("woff"), url("/_includes/_webfonts/prociono/procionott-webfont.ttf") format("truetype"), url("/_includes/_webfonts/prociono/procionott-webfont.svg#svgFontName") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
